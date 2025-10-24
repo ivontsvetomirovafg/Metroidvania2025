@@ -10,7 +10,7 @@ public class CamaraController : MonoBehaviour
     private float minX, maxX, minY, maxY;
 
     // Update is called once per frame
-    void LateUpdate()
+    void Update()
     {
         float x = Mathf.Clamp(player.position.x,minX,maxX);
         float y = Mathf.Clamp(player.position.y, minY, maxY);

@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using UnityEngine;
 
 public class CharacterControler : MonoBehaviour
@@ -7,6 +8,7 @@ public class CharacterControler : MonoBehaviour
     private Rigidbody2D rb;
     private Animator animator;
     private int jumpCount;
+    private int comboCount;
     [SerializeField]
     private float jumpForce;
     [SerializeField]
@@ -24,32 +26,73 @@ public class CharacterControler : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
-        float horizontal = Input.GetAxis("Horizontal");
-        rb.linearVelocity = new Vector2(speed * horizontal, rb.linearVelocity.y);
 
-        if(horizontal == 0)
-        {
-            animator.SetBool("Run", false);
+    {
+        if (comboCount == 0) 
+        { //Movimiento
+            float horizontal = Input.GetAxis("Horizontal");
+            rb.linearVelocity = new Vector2(speed * horizontal, rb.linearVelocity.y);
+
+            if (horizontal == 0)
+            {
+                animator.SetBool("Run", false);
+            }
+            else
+            {
+                animator.SetBool("Run", true);
+            }
+            if (horizontal < 0)
+            {
+                transform.eulerAngles = new Vector3(0, 180, 0);
+            }
+            else if (horizontal > 0)
+            {
+                transform.eulerAngles = Vector3.zero;
+            }
+            //Salto
+            if (Input.GetButtonDown("Jump") && jumpCount < maxJumps)
+            {
+                rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+                jumpCount++;
+            }
+
+            CheckJump();
+
         }
         else
         {
-            animator.SetBool("Run", true);
-        }
-        if(horizontal < 0)
-        {
-            transform.eulerAngles = new Vector3(0, 180, 0);
-        }
-        else if(horizontal > 0)
-        {
-            transform.eulerAngles = Vector3.zero;
-        }
-        if(Input.GetButtonDown("Jump") && jumpCount<maxJumps)
-        {
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
-            jumpCount++;
+            rb.linearVelocity = Vector2.zero;
         }
 
+        // Ataque
+        if (jumpCount == 0)
+        {
+            if (Input.GetButtonDown("Fire1"))
+            {
+                comboCount = Mathf.Clamp(comboCount + 1, 0, 2);
+                animator.SetInteger("Combo", comboCount);
+
+            }
+        }
+    }
+
+    public void CheckCombo1()
+    {
+        if (comboCount < 2)
+        {
+            comboCount = 0;
+            animator.SetInteger("Combo", comboCount);
+        }
+    }
+    public void CheckCombo2()
+    {
+        comboCount = 0;
+        animator.SetInteger("Combo", comboCount);
+       
+    }
+
+    void CheckJump()
+    {
         Collider2D[] coliders = Physics2D.OverlapCircleAll(transform.position, groundDistance);
         bool isGrounded = false;
         for (int i = 0; i<coliders.Length; i++)
@@ -73,5 +116,11 @@ public class CharacterControler : MonoBehaviour
             }
         }
     }
-    
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.gameObject.tag == "Enemy")
+        {
+            Debug.Log("Detecto Enemigo");
+        }
+    }
 }
