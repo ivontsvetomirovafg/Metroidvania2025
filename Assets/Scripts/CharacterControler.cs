@@ -24,6 +24,7 @@ public class CharacterControler : MonoBehaviour
     [SerializeField]
     private float coldDown;
     private float timePassFireBall;
+    private Levelmanager levelManager;
 
     //temp
     private int maxJumps = 1;
@@ -35,6 +36,7 @@ public class CharacterControler : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponentInChildren<Animator>();
+        levelManager = GameObject.Find("LevelManager").GetComponent<Levelmanager>();
     }
 
     // Update is called once per frame
@@ -73,10 +75,11 @@ public class CharacterControler : MonoBehaviour
 
             if(Input.GetButtonDown("FireBall"))
             {
-                if (coldDown <= timePassFireBall && mana >= fireBallCost)
+                if (coldDown <= timePassFireBall && GameManager.instance.GetGameData.PlayerMana >= fireBallCost)
                 {
                     Instantiate(fireBallPrefab, spawnPoint.position, spawnPoint.rotation);
-                    mana -= fireBallCost;
+                    GameManager.instance.GetGameData.PlayerMana -= fireBallCost;
+                    levelManager.UpdateMana();
                     timePassFireBall = 0; 
                 }
             }
@@ -155,7 +158,32 @@ public class CharacterControler : MonoBehaviour
     {
         if(collision.gameObject.tag == "Enemy")
         {
-            Debug.Log("Detecto Enemigo");
+            int comboAnimator = animator.GetInteger("Combo");
+            if (comboAnimator > 0)
+            {
+                collision.gameObject.GetComponent<EnemyController>().TakeDamage(GameManager.instance.GetGameData.PlayerDamage);
+            }
+            else
+            {
+                collision.gameObject.GetComponent<EnemyController>().TakeDamage(GameManager.instance.GetGameData.HeavyDamage);
+            }
+        }
+    }
+    public void TakeDamage(float _damage)
+    {
+        GameManager.instance.GetGameData.Playerlife -= _damage;
+        levelManager.UpdateLife();
+        if(GameManager.instance.GetGameData.Playerlife <=0)
+        {
+            //Muerte
+            animator.SetTrigger("Death");
+            //Sacar panel GameOver
+            //Cuando vuele
+        }
+        else
+        {
+            //Recibe daño
+            animator.SetTrigger("Hit");
         }
     }
 }

@@ -25,6 +25,10 @@ public class Fireball : MonoBehaviour
         {
             animator.SetTrigger("Dead");
             speed = 0;
+            if(collision.transform.tag=="Enemy")
+            {
+                collision.gameObject.GetComponent<EnemyController>().TakeDamage(GameManager.instance.GetGameData.FireballDamage);
+            }
         }
     }
 

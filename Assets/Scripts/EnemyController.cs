@@ -14,6 +14,7 @@ public class EnemyController : MonoBehaviour
     public Transform player;
     public float stopDistance;
     public bool attacking;
+    private bool estoyMuerto;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -26,6 +27,12 @@ public class EnemyController : MonoBehaviour
     // Update is called once per frame
     public void Update()
     {
+        if (estoyMuerto == true)
+        {
+            rb.linearVelocity = Vector3.zero;
+            return;
+        }
+
         if (playerDetected == true && attacking == false)
         {
             Vector3 distancia = player.transform.position - transform.position;
@@ -59,9 +66,33 @@ public class EnemyController : MonoBehaviour
             player = collision.transform;
         }
     }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag==("Player"))
+        {
+            collision.gameObject.GetComponent<CharacterControler>().TakeDamage(damage);
+        }
+    }
     private void StartMoving()
     {
         playerDetected = true;
         animator.SetBool("PlayerDetected", true);
+    }
+    public void TakeDamage(float _damage)
+    {
+        life-=_damage;
+        if (life <=0)
+        {
+            //muerte
+            animator.SetTrigger("Death");
+            rb.gravityScale = 0;
+            GetComponent<Collider2D>().enabled = false;
+            estoyMuerto = true;
+        }
+        else
+        {
+            //hit
+            animator.SetTrigger("Hit");
+        }
     }
 }
