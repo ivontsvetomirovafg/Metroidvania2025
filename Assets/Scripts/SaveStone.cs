@@ -32,6 +32,7 @@ public class SaveStone : MonoBehaviour
                 //Guardar partida
                 GameManager.instance.GetGameData.SceneSave = SceneManager.GetActiveScene().buildIndex;
                 GameManager.instance.SaveGame();
+                saveIcon.SetActive(false);
                 inTrigger = false;
                 //Efecto particulas
             }

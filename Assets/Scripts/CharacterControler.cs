@@ -26,10 +26,6 @@ public class CharacterControler : MonoBehaviour
     private float timePassFireBall;
     private Levelmanager levelManager;
 
-    //temp
-    private int maxJumps = 1;
-    public float mana;
-    public float maxMana;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -65,7 +61,7 @@ public class CharacterControler : MonoBehaviour
                 transform.eulerAngles = Vector3.zero;
             }
             //Salto
-            if (Input.GetButtonDown("Jump") && jumpCount < maxJumps)
+            if (Input.GetButtonDown("Jump") && jumpCount < GameManager.instance.GetGameData.MaxJumps)
             {
                 rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
                 jumpCount++;
