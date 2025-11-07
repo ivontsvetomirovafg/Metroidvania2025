@@ -208,7 +208,7 @@ Transform:
   m_GameObject: {fileID: 61898238}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.057, y: 1.127, z: 0}
+  m_LocalPosition: {x: 0.005, y: 0.513, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -548,8 +548,8 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 0.2
-      minScalar: 0.5
+      scalar: 0.26
+      minScalar: 0.61
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -814,7 +814,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 3
       scalar: 0.017453292
-      minScalar: 0.0017453292
+      minScalar: 0.0027925267
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -863,7 +863,7 @@ ParticleSystem:
         m_PreInfinity: 2
         m_PostInfinity: 2
         m_RotationOrder: 4
-    randomizeRotationDirection: 0.81
+    randomizeRotationDirection: 0.55
     gravitySource: 0
     maxNumParticles: 1000
     customEmitterVelocity: {x: 0, y: 0, z: 0}
@@ -926,7 +926,7 @@ ParticleSystem:
     serializedVersion: 6
     enabled: 1
     type: 4
-    angle: 5.11
+    angle: 0
     length: 5
     boxThickness: {x: 0, y: 0, z: 0}
     radiusThickness: 1
@@ -1012,7 +1012,7 @@ ParticleSystem:
     sphericalDirectionAmount: 0
     randomPositionAmount: 0
     radius:
-      value: 1
+      value: 1.36
       mode: 0
       spread: 0
       speed:
@@ -1069,8 +1069,8 @@ ParticleSystem:
           m_PostInfinity: 2
           m_RotationOrder: 4
     arc:
-      value: 296.2
-      mode: 0
+      value: 360
+      mode: 1
       spread: 0
       speed:
         serializedVersion: 2
@@ -1570,8 +1570,8 @@ ParticleSystem:
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
-        key1: {r: 1, g: 1, b: 1, a: 1}
-        key2: {r: 0, g: 0, b: 0, a: 0}
+        key1: {r: 1, g: 1, b: 1, a: 0}
+        key2: {r: 0, g: 0, b: 0, a: 1}
         key3: {r: 0, g: 0, b: 0, a: 0}
         key4: {r: 0, g: 0, b: 0, a: 0}
         key5: {r: 0, g: 0, b: 0, a: 0}
@@ -1587,14 +1587,14 @@ ParticleSystem:
         ctime7: 0
         atime0: 0
         atime1: 65535
-        atime2: 0
+        atime2: 65535
         atime3: 0
         atime4: 0
         atime5: 0
         atime6: 0
         atime7: 0
         m_Mode: 0
-        m_ColorSpace: -1
+        m_ColorSpace: 0
         m_NumColorKeys: 2
         m_NumAlphaKeys: 2
       minGradient:
@@ -1752,11 +1752,11 @@ ParticleSystem:
     flipU: 0
     flipV: 0
   VelocityModule:
-    enabled: 0
+    enabled: 1
     x:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0
+      scalar: -0.03
       minScalar: 0
       maxCurve:
         serializedVersion: 2
@@ -1809,7 +1809,7 @@ ParticleSystem:
     y:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0
+      scalar: -0.01
       minScalar: 0
       maxCurve:
         serializedVersion: 2
@@ -1862,7 +1862,7 @@ ParticleSystem:
     z:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0
+      scalar: 0.04
       minScalar: 0
       maxCurve:
         serializedVersion: 2
@@ -2021,7 +2021,7 @@ ParticleSystem:
     orbitalZ:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0
+      scalar: 1.61
       minScalar: 0
       maxCurve:
         serializedVersion: 2
@@ -6012,6 +6012,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ChestScript
   iconUI: {fileID: 411553308}
   gemaName: DobleSalto
+  particulas: {fileID: 61898241}
 --- !u!1 &440183282
 GameObject:
   m_ObjectHideFlags: 0
@@ -7307,7 +7308,7 @@ MonoBehaviour:
     fireballDamage: 15
     heavyDamage: 50
     sceneSave: 0
-    maxJumps: 0
+    maxJumps: 1
   slot: 1
   doorToGo: 0
   comeFromLoadGame: 0
@@ -9164,6 +9165,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SaveStone
   saveIcon: {fileID: 763348238}
+  LuzApagada: {fileID: 1416940705}
 --- !u!50 &1608330793
 Rigidbody2D:
   serializedVersion: 5
@@ -11413,7 +11415,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9133364039548253696, guid: ce4c08e4475aca64a8e2b2cb09165e49, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.89
+      value: -8.845
       objectReference: {fileID: 0}
     - target: {fileID: 9133364039548253696, guid: ce4c08e4475aca64a8e2b2cb09165e49, type: 3}
       propertyPath: m_LocalPosition.y

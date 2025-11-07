@@ -6,6 +6,8 @@ public class SaveStone : MonoBehaviour
     [SerializeField]
     private GameObject saveIcon;
     private bool inTrigger;
+    [SerializeField]
+    private GameObject LuzApagada;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -22,6 +24,7 @@ public class SaveStone : MonoBehaviour
             saveIcon.SetActive(false);
             inTrigger = false;
         }
+
     }
     private void Update()
     {
@@ -34,6 +37,7 @@ public class SaveStone : MonoBehaviour
                 GameManager.instance.SaveGame();
                 saveIcon.SetActive(false);
                 inTrigger = false;
+                LuzApagada.SetActive(false);
                 //Efecto particulas
             }
         }

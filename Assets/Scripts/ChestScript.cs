@@ -8,6 +8,9 @@ public class ChestScript : MonoBehaviour
     private Animator animator;
     [SerializeField]
     private string gemaName;
+    private Animator animator2;
+    [SerializeField]
+    private ParticleSystem particulas;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -89,5 +92,9 @@ public class ChestScript : MonoBehaviour
 
         Time.timeScale = 1;
         GetComponent<Collider2D>().enabled = false;
+    }
+    public void ActivateParticles()
+    {
+        particulas.Play();
     }
 }
