@@ -1,73 +1,7 @@
 fileFormatVersion: 2
 guid: 3f42b240289d79242b4afb116b43c32f
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: 5965477551403842650
-    second: TX Tileset - Dungeon Ground Extra_0
-  - first:
-      213: 1857518077486901177
-    second: TX Tileset - Dungeon Ground Extra_1
-  - first:
-      213: 1194433413585091824
-    second: TX Tileset - Dungeon Ground Extra_2
-  - first:
-      213: -5937029169442101421
-    second: TX Tileset - Dungeon Ground Extra_3
-  - first:
-      213: -9033055242206848006
-    second: TX Tileset - Dungeon Ground Extra_4
-  - first:
-      213: 4580779589190818842
-    second: TX Tileset - Dungeon Ground Extra_5
-  - first:
-      213: -1990586828577404898
-    second: TX Tileset - Dungeon Ground Extra_6
-  - first:
-      213: 2640341131077792075
-    second: TX Tileset - Dungeon Ground Extra_7
-  - first:
-      213: 5908235348662839244
-    second: TX Tileset - Dungeon Ground Extra_8
-  - first:
-      213: -3156317695971802387
-    second: TX Tileset - Dungeon Ground Extra_9
-  - first:
-      213: -1373471582211668088
-    second: TX Tileset - Dungeon Ground Extra_10
-  - first:
-      213: -8944856668527727570
-    second: TX Tileset - Dungeon Ground Extra_11
-  - first:
-      213: 8559242995107348892
-    second: TX Tileset - Dungeon Ground Extra_12
-  - first:
-      213: -3090321332322252003
-    second: TX Tileset - Dungeon Ground Extra_13
-  - first:
-      213: -4719444941838436257
-    second: TX Tileset - Dungeon Ground Extra_14
-  - first:
-      213: 6859181318690160683
-    second: TX Tileset - Dungeon Ground Extra_15
-  - first:
-      213: 439005919104052848
-    second: TX Tileset - Dungeon Ground Extra_16
-  - first:
-      213: 7343742420208675123
-    second: TX Tileset - Dungeon Ground Extra_17
-  - first:
-      213: -7194358132297735595
-    second: TX Tileset - Dungeon Ground Extra_18
-  - first:
-      213: 8464393266524079945
-    second: TX Tileset - Dungeon Ground Extra_19
-  - first:
-      213: 5151665520748135949
-    second: TX Tileset - Dungeon Ground Extra_20
-  - first:
-      213: 2253133720588512290
-    second: TX Tileset - Dungeon Ground Extra_21
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -114,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -167,19 +101,19 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 447
-        width: 65
-        height: 65
+        y: 480
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a5c3efef932a9c250800000000000000
-      internalID: 5965477551403842650
+      spriteID: 90216973abaea0b46b7f93674b5f1c05
+      internalID: -119016571
       vertices: []
       indices: 
       edges: []
@@ -188,20 +122,20 @@ TextureImporter:
       name: TX Tileset - Dungeon Ground Extra_1
       rect:
         serializedVersion: 2
-        x: 95
-        y: 447
-        width: 66
-        height: 65
+        x: 32
+        y: 480
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 9b7297499da37c910800000000000000
-      internalID: 1857518077486901177
+      spriteID: 17405d6210c86e9439cc39f26f53d5f9
+      internalID: -1934235803
       vertices: []
       indices: 
       edges: []
@@ -210,20 +144,20 @@ TextureImporter:
       name: TX Tileset - Dungeon Ground Extra_2
       rect:
         serializedVersion: 2
-        x: 191
-        y: 447
-        width: 66
-        height: 65
+        x: 96
+        y: 480
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 0fcb89c7cda739010800000000000000
-      internalID: 1194433413585091824
+      spriteID: 3cca748ecc0ad90479688dcdcd543992
+      internalID: 1820967812
       vertices: []
       indices: 
       edges: []
@@ -232,20 +166,20 @@ TextureImporter:
       name: TX Tileset - Dungeon Ground Extra_3
       rect:
         serializedVersion: 2
-        x: 287
-        y: 479
-        width: 66
-        height: 33
+        x: 128
+        y: 480
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 35765461d6f6b9da0800000000000000
-      internalID: -5937029169442101421
+      spriteID: e9b59d9bec6040945900bb651ef0ce18
+      internalID: 1936050936
       vertices: []
       indices: 
       edges: []
@@ -254,20 +188,20 @@ TextureImporter:
       name: TX Tileset - Dungeon Ground Extra_4
       rect:
         serializedVersion: 2
-        x: 383
-        y: 479
-        width: 66
-        height: 33
+        x: 192
+        y: 480
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: afbd7cbcd1424a280800000000000000
-      internalID: -9033055242206848006
+      spriteID: 1b25eb2b42034d849aed11e711ba9547
+      internalID: 84150701
       vertices: []
       indices: 
       edges: []
@@ -276,20 +210,20 @@ TextureImporter:
       name: TX Tileset - Dungeon Ground Extra_5
       rect:
         serializedVersion: 2
-        x: 287
-        y: 415
-        width: 66
-        height: 34
+        x: 224
+        y: 480
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a1c141034c2329f30800000000000000
-      internalID: 4580779589190818842
+      spriteID: 207375c1dc28c0c429bffa807432d5cf
+      internalID: -1461481630
       vertices: []
       indices: 
       edges: []
@@ -298,20 +232,20 @@ TextureImporter:
       name: TX Tileset - Dungeon Ground Extra_6
       rect:
         serializedVersion: 2
-        x: 369
-        y: 434
-        width: 8
-        height: 15
+        x: 288
+        y: 480
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e18821473d30064e0800000000000000
-      internalID: -1990586828577404898
+      spriteID: 6f1895812ae71784aaadd6cec6ef5723
+      internalID: -126572382
       vertices: []
       indices: 
       edges: []
@@ -320,20 +254,20 @@ TextureImporter:
       name: TX Tileset - Dungeon Ground Extra_7
       rect:
         serializedVersion: 2
-        x: 383
-        y: 415
-        width: 66
-        height: 34
+        x: 320
+        y: 480
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: b41beb3054064a420800000000000000
-      internalID: 2640341131077792075
+      spriteID: 317050996b082494e81b73f5a082be4a
+      internalID: 1706578029
       vertices: []
       indices: 
       edges: []
@@ -342,20 +276,20 @@ TextureImporter:
       name: TX Tileset - Dungeon Ground Extra_8
       rect:
         serializedVersion: 2
-        x: 0
-        y: 351
-        width: 65
-        height: 66
+        x: 384
+        y: 480
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: cc764761fb44ef150800000000000000
-      internalID: 5908235348662839244
+      spriteID: d926a4e150fdaa84daea209c6c5d16e5
+      internalID: -942725845
       vertices: []
       indices: 
       edges: []
@@ -364,20 +298,20 @@ TextureImporter:
       name: TX Tileset - Dungeon Ground Extra_9
       rect:
         serializedVersion: 2
-        x: 95
-        y: 351
-        width: 66
-        height: 66
+        x: 416
+        y: 480
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: de2425547c18234d0800000000000000
-      internalID: -3156317695971802387
+      spriteID: c3741e0dd5a19a841bf54a015a4520d3
+      internalID: 701372569
       vertices: []
       indices: 
       edges: []
@@ -386,20 +320,20 @@ TextureImporter:
       name: TX Tileset - Dungeon Ground Extra_10
       rect:
         serializedVersion: 2
-        x: 191
-        y: 351
-        width: 66
-        height: 66
+        x: 0
+        y: 448
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 8870e297fd270fce0800000000000000
-      internalID: -1373471582211668088
+      spriteID: 63672e8a24ca4804a84a91c8007543ba
+      internalID: -684557170
       vertices: []
       indices: 
       edges: []
@@ -408,20 +342,20 @@ TextureImporter:
       name: TX Tileset - Dungeon Ground Extra_11
       rect:
         serializedVersion: 2
-        x: 287
-        y: 351
-        width: 68
-        height: 34
+        x: 32
+        y: 448
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e2cee99704c7dd380800000000000000
-      internalID: -8944856668527727570
+      spriteID: b04f11de79d97224b8099af6b4ae8dd8
+      internalID: -1511293860
       vertices: []
       indices: 
       edges: []
@@ -430,20 +364,20 @@ TextureImporter:
       name: TX Tileset - Dungeon Ground Extra_12
       rect:
         serializedVersion: 2
-        x: 376
-        y: 351
-        width: 73
-        height: 34
+        x: 96
+        y: 448
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: c91cf9db72a88c670800000000000000
-      internalID: 8559242995107348892
+      spriteID: ef0324ab2d3e75048880a4173e014a7b
+      internalID: -1434716449
       vertices: []
       indices: 
       edges: []
@@ -452,20 +386,20 @@ TextureImporter:
       name: TX Tileset - Dungeon Ground Extra_13
       rect:
         serializedVersion: 2
-        x: 0
-        y: 255
-        width: 97
-        height: 66
+        x: 128
+        y: 448
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: d1bce191f19fc15d0800000000000000
-      internalID: -3090321332322252003
+      spriteID: 237a3a08c30a2ed4a87c590d91026db1
+      internalID: 1301108797
       vertices: []
       indices: 
       edges: []
@@ -474,20 +408,20 @@ TextureImporter:
       name: TX Tileset - Dungeon Ground Extra_14
       rect:
         serializedVersion: 2
-        x: 127
-        y: 255
-        width: 98
-        height: 66
+        x: 192
+        y: 448
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: f58b4b084d9218eb0800000000000000
-      internalID: -4719444941838436257
+      spriteID: 887897beec42d7e4788912220ebb1fa7
+      internalID: 124311093
       vertices: []
       indices: 
       edges: []
@@ -496,20 +430,20 @@ TextureImporter:
       name: TX Tileset - Dungeon Ground Extra_15
       rect:
         serializedVersion: 2
-        x: 289
-        y: 287
-        width: 64
-        height: 34
+        x: 224
+        y: 448
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: b20c58e5115b03f50800000000000000
-      internalID: 6859181318690160683
+      spriteID: fd9dd328983f9af41b71bc0e8408fa2f
+      internalID: 28941583
       vertices: []
       indices: 
       edges: []
@@ -518,20 +452,20 @@ TextureImporter:
       name: TX Tileset - Dungeon Ground Extra_16
       rect:
         serializedVersion: 2
-        x: 383
-        y: 287
-        width: 64
-        height: 34
+        x: 288
+        y: 416
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 07ead76be89a71600800000000000000
-      internalID: 439005919104052848
+      spriteID: c480cbb8ed6f53844bfdf1ddff53be9d
+      internalID: -1262148823
       vertices: []
       indices: 
       edges: []
@@ -540,20 +474,20 @@ TextureImporter:
       name: TX Tileset - Dungeon Ground Extra_17
       rect:
         serializedVersion: 2
-        x: 0
-        y: 159
-        width: 97
-        height: 66
+        x: 320
+        y: 416
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 339618682d63ae560800000000000000
-      internalID: 7343742420208675123
+      spriteID: 67e24e1600c610e4388a6288e3f217dd
+      internalID: 712099487
       vertices: []
       indices: 
       edges: []
@@ -562,20 +496,20 @@ TextureImporter:
       name: TX Tileset - Dungeon Ground Extra_18
       rect:
         serializedVersion: 2
-        x: 127
-        y: 159
-        width: 98
-        height: 66
+        x: 352
+        y: 416
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 55263716561882c90800000000000000
-      internalID: -7194358132297735595
+      spriteID: f52c99a8cc390d942a5418ee7edc31f4
+      internalID: -503489254
       vertices: []
       indices: 
       edges: []
@@ -584,20 +518,20 @@ TextureImporter:
       name: TX Tileset - Dungeon Ground Extra_19
       rect:
         serializedVersion: 2
-        x: 287
-        y: 95
-        width: 66
-        height: 162
+        x: 384
+        y: 416
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 947406264d0977570800000000000000
-      internalID: 8464393266524079945
+      spriteID: 99076716ae0d6c240b0cdc8a17d2019f
+      internalID: -1344687546
       vertices: []
       indices: 
       edges: []
@@ -606,20 +540,20 @@ TextureImporter:
       name: TX Tileset - Dungeon Ground Extra_20
       rect:
         serializedVersion: 2
-        x: 383
-        y: 95
-        width: 66
-        height: 162
+        x: 416
+        y: 416
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: d0602d51f746e7740800000000000000
-      internalID: 5151665520748135949
+      spriteID: c702cf3ea14823b44a8e634373346163
+      internalID: -246873211
       vertices: []
       indices: 
       edges: []
@@ -629,19 +563,1647 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 63
-        width: 161
-        height: 66
+        y: 384
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 22ce1276e2db44f10800000000000000
-      internalID: 2253133720588512290
+      spriteID: c430cbbc771813748aeaf080a29fc984
+      internalID: 750318705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Tileset - Dungeon Ground Extra_22
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d4ab5d658d4671429f1dc4f76755b08
+      internalID: -354192448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Tileset - Dungeon Ground Extra_23
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4156ca003761ede42a0bcf83cdef00b9
+      internalID: -571878583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Tileset - Dungeon Ground Extra_24
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b2207328e308a441a8aabf3dc731966
+      internalID: -1714848450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Tileset - Dungeon Ground Extra_25
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c86486e2c2e9040439c8f9edc8698d2e
+      internalID: -276434549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Tileset - Dungeon Ground Extra_26
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63c89afe8fb5f3544b8935ebb7dc772b
+      internalID: -149189495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Tileset - Dungeon Ground Extra_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0449de2d12b5f924990b4dc2311db776
+      internalID: 1248802167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Tileset - Dungeon Ground Extra_28
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9170d9f36a019d4aa5221b8d7f6299d
+      internalID: 306853139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Tileset - Dungeon Ground Extra_29
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 791ae6cbc428cc64b8cbd23fc592b07c
+      internalID: -214806740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Tileset - Dungeon Ground Extra_30
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3079f5771bf9f7a4a8498e0631cce93e
+      internalID: -1603698793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Tileset - Dungeon Ground Extra_31
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 050e29df0014de54983f0bb02ee93565
+      internalID: 1790188263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Tileset - Dungeon Ground Extra_32
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21a9b6c8118f33549b2f4ed4b079b6eb
+      internalID: -572132155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Tileset - Dungeon Ground Extra_33
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cea8cb2cb0edc674fbf25a985592bd26
+      internalID: 1019504497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Tileset - Dungeon Ground Extra_34
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bbcb359d5905ee48a71458de5d5b6c7
+      internalID: 1346896829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Tileset - Dungeon Ground Extra_35
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a31bc44f129b99489f0475f408f83ae
+      internalID: -2070588062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Tileset - Dungeon Ground Extra_36
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cb15339393267047b88107d0e1461e4
+      internalID: -402384056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Tileset - Dungeon Ground Extra_37
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 376803b73b909964eb179968e1a637eb
+      internalID: -535210436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Tileset - Dungeon Ground Extra_38
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a75c6df39c935a4885c310e015392b8
+      internalID: 1038504094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Tileset - Dungeon Ground Extra_39
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 439396e4a1ec0024ea046b0195618b43
+      internalID: 1721629489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Tileset - Dungeon Ground Extra_40
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53db1e6164b3e454ab34b5a28d6458bb
+      internalID: 1118542885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Tileset - Dungeon Ground Extra_41
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9acaa7828f4239d4591c8c05354159a4
+      internalID: -1154727105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Tileset - Dungeon Ground Extra_42
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9039d462e11e5f644b9bb42219067007
+      internalID: 458987278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Tileset - Dungeon Ground Extra_43
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bc35522db05d6645bbd98407a7a5c24
+      internalID: -31679861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Tileset - Dungeon Ground Extra_44
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e50e645eb3415ed449c8aa5cc0c70c48
+      internalID: 689758949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Tileset - Dungeon Ground Extra_45
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e768fe7cc0d987148b164cd5252fb90a
+      internalID: -1183216320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Tileset - Dungeon Ground Extra_46
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50981b907d75dc948b9ec6b59fbc53c2
+      internalID: -695987561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Tileset - Dungeon Ground Extra_47
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbefca76b534f4b4a8520c9abaa3b655
+      internalID: 1729153851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Tileset - Dungeon Ground Extra_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44e9ce4e5af5c434799282544273dbad
+      internalID: -1687324634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Tileset - Dungeon Ground Extra_49
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23f04035b9b3051499f20ed977200397
+      internalID: -2059968637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Tileset - Dungeon Ground Extra_50
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6d6ff20f4beac94d81d76daff0e5e66
+      internalID: -114728053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Tileset - Dungeon Ground Extra_51
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fa8b1e48f8ada843887d72f681ed875
+      internalID: 1190456833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Tileset - Dungeon Ground Extra_52
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b7a20ad083c28d4d829a165a36b4ae2
+      internalID: -2104105466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Tileset - Dungeon Ground Extra_53
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4252783a8df556a48889535443ece52c
+      internalID: 320380464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Tileset - Dungeon Ground Extra_54
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1c03519f6e334340831a2289d84577d
+      internalID: -1942890360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Tileset - Dungeon Ground Extra_55
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c339b9746c7e4a74c9fe61aaa2108fa0
+      internalID: -796521876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Tileset - Dungeon Ground Extra_56
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f6345f8d9336f448b8aa07d1e245d31
+      internalID: 1290088540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Tileset - Dungeon Ground Extra_57
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78bd34bde79d3694c97028dcb3985caf
+      internalID: 486224994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Tileset - Dungeon Ground Extra_58
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 812ae3a629ba51d449326caf1e3c8ae5
+      internalID: 1146894431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Tileset - Dungeon Ground Extra_59
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8857358e730d0d34c8d725595e9bb7d5
+      internalID: -931535434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Tileset - Dungeon Ground Extra_60
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eedfe331f37bd54408b372d831e27b15
+      internalID: -967685758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Tileset - Dungeon Ground Extra_61
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c555ea6f2c164494a9fdf46e126aac5b
+      internalID: -1897466947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Tileset - Dungeon Ground Extra_62
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 916b62c5d06adec4abafa60643cd0631
+      internalID: 564926558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Tileset - Dungeon Ground Extra_63
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d78de5ec5a56dfc49ae7e3830be70415
+      internalID: 812299153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Tileset - Dungeon Ground Extra_64
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1108d94c1b76d434894f976d231e11d7
+      internalID: -245251034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Tileset - Dungeon Ground Extra_65
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22bf7c2fd3576d2448999ad90611089b
+      internalID: -864143693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Tileset - Dungeon Ground Extra_66
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73aaa9ee621e3664ea0a727efa7be18c
+      internalID: -1104606636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Tileset - Dungeon Ground Extra_67
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb4721a7943b30c4b91eec530bf0695f
+      internalID: -405847070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Tileset - Dungeon Ground Extra_68
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e75e161d4342212488a613a444e80aec
+      internalID: -837467522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Tileset - Dungeon Ground Extra_69
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 736f8c372ee2128408ff168fba1800fe
+      internalID: -1935309126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Tileset - Dungeon Ground Extra_70
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b25515ef42b45e445b28dd5594d22f8b
+      internalID: -2102628421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Tileset - Dungeon Ground Extra_71
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b787a91237cb7944a96a5e64d71a6d60
+      internalID: 739486323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Tileset - Dungeon Ground Extra_72
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b318334f29d59c244adca6c80508e359
+      internalID: 1958137497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Tileset - Dungeon Ground Extra_73
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c7091217978c404cb3668a932c22942
+      internalID: 2008451353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Tileset - Dungeon Ground Extra_74
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 587fd40f38bc18e4a9108cbea1c2ce00
+      internalID: 1509565018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Tileset - Dungeon Ground Extra_75
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2674f24cce412745af8aacb1469290b
+      internalID: -1527684357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Tileset - Dungeon Ground Extra_76
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 898194c49196a874cacbb9bd822fec75
+      internalID: 1574383269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Tileset - Dungeon Ground Extra_77
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1403c812183144469dd387ea623a000
+      internalID: 1352489369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Tileset - Dungeon Ground Extra_78
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9364eaccb5710a542a3c590281220072
+      internalID: -1325780820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Tileset - Dungeon Ground Extra_79
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a25060b14915d6948b1995df72dd96f6
+      internalID: -2130652439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Tileset - Dungeon Ground Extra_80
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 118a0d6ac5dfed3479f4dc2c49102a46
+      internalID: -1170209082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Tileset - Dungeon Ground Extra_81
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e57fb183de51e2147b2f6524e6c3ca32
+      internalID: 733551190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Tileset - Dungeon Ground Extra_82
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4d04d83d5da38442abd2d4f2d2dfc4f
+      internalID: 129281402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Tileset - Dungeon Ground Extra_83
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1938b8dee1b7198419ca50a17917ca74
+      internalID: 473377513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Tileset - Dungeon Ground Extra_84
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 295676efbb1e7b149a47a28d79b6f810
+      internalID: 18789043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Tileset - Dungeon Ground Extra_85
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61c67b8dabad1324daa0a7f937103336
+      internalID: 727292758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Tileset - Dungeon Ground Extra_86
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9bc7d919db3a8645943954c03af9e94
+      internalID: -548330140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Tileset - Dungeon Ground Extra_87
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15d0b3b3f0294ca49b7fcd0af27bcfbc
+      internalID: 753677080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Tileset - Dungeon Ground Extra_88
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e28e8f843ecacb94b8fabf8c78022df0
+      internalID: 933898613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Tileset - Dungeon Ground Extra_89
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2558e11d1a164dd49ade4f949867424b
+      internalID: 1644001639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Tileset - Dungeon Ground Extra_90
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05a0889cf27eda5488a090cdeef7ebeb
+      internalID: 1217063057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Tileset - Dungeon Ground Extra_91
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67d27cbf1a0b9134fba5ad3b33da2dad
+      internalID: -2060032817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Tileset - Dungeon Ground Extra_92
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f4507ac7df2b394e908f1396314b5e3
+      internalID: -592699945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Tileset - Dungeon Ground Extra_93
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 207e45d9f67e494458f3535efe011e9d
+      internalID: -880661621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Tileset - Dungeon Ground Extra_94
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a44e21daebec6b942bab3d97825e1353
+      internalID: -724674866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Tileset - Dungeon Ground Extra_95
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f12ac4448503a5443a7c3ba942da62c7
+      internalID: 64755672
       vertices: []
       indices: 
       edges: []
@@ -650,7 +2212,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: d9077b0bde202d34ca2f2e5a260b625c
     internalID: 0
     vertices: []
     indices: 
@@ -658,30 +2220,106 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":32.0,"y":32.0},"gridSpriteSize":{"x":32.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      TX Tileset - Dungeon Ground Extra_0: 5965477551403842650
-      TX Tileset - Dungeon Ground Extra_1: 1857518077486901177
-      TX Tileset - Dungeon Ground Extra_10: -1373471582211668088
-      TX Tileset - Dungeon Ground Extra_11: -8944856668527727570
-      TX Tileset - Dungeon Ground Extra_12: 8559242995107348892
-      TX Tileset - Dungeon Ground Extra_13: -3090321332322252003
-      TX Tileset - Dungeon Ground Extra_14: -4719444941838436257
-      TX Tileset - Dungeon Ground Extra_15: 6859181318690160683
-      TX Tileset - Dungeon Ground Extra_16: 439005919104052848
-      TX Tileset - Dungeon Ground Extra_17: 7343742420208675123
-      TX Tileset - Dungeon Ground Extra_18: -7194358132297735595
-      TX Tileset - Dungeon Ground Extra_19: 8464393266524079945
-      TX Tileset - Dungeon Ground Extra_2: 1194433413585091824
-      TX Tileset - Dungeon Ground Extra_20: 5151665520748135949
-      TX Tileset - Dungeon Ground Extra_21: 2253133720588512290
-      TX Tileset - Dungeon Ground Extra_3: -5937029169442101421
-      TX Tileset - Dungeon Ground Extra_4: -9033055242206848006
-      TX Tileset - Dungeon Ground Extra_5: 4580779589190818842
-      TX Tileset - Dungeon Ground Extra_6: -1990586828577404898
-      TX Tileset - Dungeon Ground Extra_7: 2640341131077792075
-      TX Tileset - Dungeon Ground Extra_8: 5908235348662839244
-      TX Tileset - Dungeon Ground Extra_9: -3156317695971802387
+      TX Tileset - Dungeon Ground Extra_0: -119016571
+      TX Tileset - Dungeon Ground Extra_1: -1934235803
+      TX Tileset - Dungeon Ground Extra_10: -684557170
+      TX Tileset - Dungeon Ground Extra_11: -1511293860
+      TX Tileset - Dungeon Ground Extra_12: -1434716449
+      TX Tileset - Dungeon Ground Extra_13: 1301108797
+      TX Tileset - Dungeon Ground Extra_14: 124311093
+      TX Tileset - Dungeon Ground Extra_15: 28941583
+      TX Tileset - Dungeon Ground Extra_16: -1262148823
+      TX Tileset - Dungeon Ground Extra_17: 712099487
+      TX Tileset - Dungeon Ground Extra_18: -503489254
+      TX Tileset - Dungeon Ground Extra_19: -1344687546
+      TX Tileset - Dungeon Ground Extra_2: 1820967812
+      TX Tileset - Dungeon Ground Extra_20: -246873211
+      TX Tileset - Dungeon Ground Extra_21: 750318705
+      TX Tileset - Dungeon Ground Extra_22: -354192448
+      TX Tileset - Dungeon Ground Extra_23: -571878583
+      TX Tileset - Dungeon Ground Extra_24: -1714848450
+      TX Tileset - Dungeon Ground Extra_25: -276434549
+      TX Tileset - Dungeon Ground Extra_26: -149189495
+      TX Tileset - Dungeon Ground Extra_27: 1248802167
+      TX Tileset - Dungeon Ground Extra_28: 306853139
+      TX Tileset - Dungeon Ground Extra_29: -214806740
+      TX Tileset - Dungeon Ground Extra_3: 1936050936
+      TX Tileset - Dungeon Ground Extra_30: -1603698793
+      TX Tileset - Dungeon Ground Extra_31: 1790188263
+      TX Tileset - Dungeon Ground Extra_32: -572132155
+      TX Tileset - Dungeon Ground Extra_33: 1019504497
+      TX Tileset - Dungeon Ground Extra_34: 1346896829
+      TX Tileset - Dungeon Ground Extra_35: -2070588062
+      TX Tileset - Dungeon Ground Extra_36: -402384056
+      TX Tileset - Dungeon Ground Extra_37: -535210436
+      TX Tileset - Dungeon Ground Extra_38: 1038504094
+      TX Tileset - Dungeon Ground Extra_39: 1721629489
+      TX Tileset - Dungeon Ground Extra_4: 84150701
+      TX Tileset - Dungeon Ground Extra_40: 1118542885
+      TX Tileset - Dungeon Ground Extra_41: -1154727105
+      TX Tileset - Dungeon Ground Extra_42: 458987278
+      TX Tileset - Dungeon Ground Extra_43: -31679861
+      TX Tileset - Dungeon Ground Extra_44: 689758949
+      TX Tileset - Dungeon Ground Extra_45: -1183216320
+      TX Tileset - Dungeon Ground Extra_46: -695987561
+      TX Tileset - Dungeon Ground Extra_47: 1729153851
+      TX Tileset - Dungeon Ground Extra_48: -1687324634
+      TX Tileset - Dungeon Ground Extra_49: -2059968637
+      TX Tileset - Dungeon Ground Extra_5: -1461481630
+      TX Tileset - Dungeon Ground Extra_50: -114728053
+      TX Tileset - Dungeon Ground Extra_51: 1190456833
+      TX Tileset - Dungeon Ground Extra_52: -2104105466
+      TX Tileset - Dungeon Ground Extra_53: 320380464
+      TX Tileset - Dungeon Ground Extra_54: -1942890360
+      TX Tileset - Dungeon Ground Extra_55: -796521876
+      TX Tileset - Dungeon Ground Extra_56: 1290088540
+      TX Tileset - Dungeon Ground Extra_57: 486224994
+      TX Tileset - Dungeon Ground Extra_58: 1146894431
+      TX Tileset - Dungeon Ground Extra_59: -931535434
+      TX Tileset - Dungeon Ground Extra_6: -126572382
+      TX Tileset - Dungeon Ground Extra_60: -967685758
+      TX Tileset - Dungeon Ground Extra_61: -1897466947
+      TX Tileset - Dungeon Ground Extra_62: 564926558
+      TX Tileset - Dungeon Ground Extra_63: 812299153
+      TX Tileset - Dungeon Ground Extra_64: -245251034
+      TX Tileset - Dungeon Ground Extra_65: -864143693
+      TX Tileset - Dungeon Ground Extra_66: -1104606636
+      TX Tileset - Dungeon Ground Extra_67: -405847070
+      TX Tileset - Dungeon Ground Extra_68: -837467522
+      TX Tileset - Dungeon Ground Extra_69: -1935309126
+      TX Tileset - Dungeon Ground Extra_7: 1706578029
+      TX Tileset - Dungeon Ground Extra_70: -2102628421
+      TX Tileset - Dungeon Ground Extra_71: 739486323
+      TX Tileset - Dungeon Ground Extra_72: 1958137497
+      TX Tileset - Dungeon Ground Extra_73: 2008451353
+      TX Tileset - Dungeon Ground Extra_74: 1509565018
+      TX Tileset - Dungeon Ground Extra_75: -1527684357
+      TX Tileset - Dungeon Ground Extra_76: 1574383269
+      TX Tileset - Dungeon Ground Extra_77: 1352489369
+      TX Tileset - Dungeon Ground Extra_78: -1325780820
+      TX Tileset - Dungeon Ground Extra_79: -2130652439
+      TX Tileset - Dungeon Ground Extra_8: -942725845
+      TX Tileset - Dungeon Ground Extra_80: -1170209082
+      TX Tileset - Dungeon Ground Extra_81: 733551190
+      TX Tileset - Dungeon Ground Extra_82: 129281402
+      TX Tileset - Dungeon Ground Extra_83: 473377513
+      TX Tileset - Dungeon Ground Extra_84: 18789043
+      TX Tileset - Dungeon Ground Extra_85: 727292758
+      TX Tileset - Dungeon Ground Extra_86: -548330140
+      TX Tileset - Dungeon Ground Extra_87: 753677080
+      TX Tileset - Dungeon Ground Extra_88: 933898613
+      TX Tileset - Dungeon Ground Extra_89: 1644001639
+      TX Tileset - Dungeon Ground Extra_9: 701372569
+      TX Tileset - Dungeon Ground Extra_90: 1217063057
+      TX Tileset - Dungeon Ground Extra_91: -2060032817
+      TX Tileset - Dungeon Ground Extra_92: -592699945
+      TX Tileset - Dungeon Ground Extra_93: -880661621
+      TX Tileset - Dungeon Ground Extra_94: -724674866
+      TX Tileset - Dungeon Ground Extra_95: 64755672
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
