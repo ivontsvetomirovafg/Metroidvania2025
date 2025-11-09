@@ -7,7 +7,7 @@ public class CamaraController : MonoBehaviour
     [SerializeField]
     private Vector3 camOffset;
     [SerializeField]
-    private float minX, maxX, minY, maxY;
+    public float minX, maxX, minY, maxY;
 
     // Update is called once per frame
     void Update()

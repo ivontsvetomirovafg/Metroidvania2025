@@ -3,17 +3,14 @@ using UnityEngine;
 public class AjustarCamara : MonoBehaviour
 {
     [SerializeField]
-    public int x, y;
+    public float newMinX, newMixX, newMinY, newMaxY;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if(collision.gameObject.tag == "Player")
+        {
+        CamaraController cam = Camera.main.GetComponent<CamaraController>();
+    
+        }
     }
 }

@@ -178,7 +178,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3056818551512613493, guid: ce4c08e4475aca64a8e2b2cb09165e49, type: 3}
       propertyPath: sceneToGo
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4723497889003036017, guid: ce4c08e4475aca64a8e2b2cb09165e49, type: 3}
       propertyPath: m_Name
@@ -2495,7 +2495,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3056818551512613493, guid: ce4c08e4475aca64a8e2b2cb09165e49, type: 3}
       propertyPath: sceneToGo
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4723497889003036017, guid: ce4c08e4475aca64a8e2b2cb09165e49, type: 3}
       propertyPath: m_Name
@@ -2928,7 +2928,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3056818551512613493, guid: ce4c08e4475aca64a8e2b2cb09165e49, type: 3}
       propertyPath: sceneToGo
-      value: 4
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4723497889003036017, guid: ce4c08e4475aca64a8e2b2cb09165e49, type: 3}
       propertyPath: m_Name
@@ -3874,8 +3874,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1004887681faaa048af488b0caf352c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AjustarCamara
-  x: 0
-  y: 0
+  newMinX: 0
+  newMixX: 0
+  newMinY: 0
+  newMaxY: 0
 --- !u!65 &1985664209
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4016,7 +4018,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3056818551512613493, guid: ce4c08e4475aca64a8e2b2cb09165e49, type: 3}
       propertyPath: sceneToGo
-      value: 7
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4723497889003036017, guid: ce4c08e4475aca64a8e2b2cb09165e49, type: 3}
       propertyPath: m_Name
