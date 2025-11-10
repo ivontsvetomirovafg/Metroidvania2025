@@ -102,17 +102,9 @@ public class BossController : MonoBehaviour
         while (t<1)
         {
             t += Time.deltaTime * jumpSpeed;
+
             float posX = Mathf.Lerp(puntoA.x, puntoBX, t);
             float posY = puntoA.y + (4 * maxJump * t * (1 - t));
-
-            if(t<=0.5f)
-            {
-                posY = Mathf.Lerp(puntoA.x, puntoBX, t); //Se frene
-            }
-            else
-            {
-                posY = Mathf.Lerp(puntoA.y, transform.position.y, 2-(t*2)); //Accelere
-            }
 
             transform.position = new Vector2(posX, posY);
             yield return null;
