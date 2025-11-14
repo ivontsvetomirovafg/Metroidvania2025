@@ -5,6 +5,8 @@ public class SpikeController : MonoBehaviour
     private Rigidbody2D rb;
     [SerializeField]
     private float speed;
+    [SerializeField]
+    private float damage;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -24,6 +26,10 @@ public class SpikeController : MonoBehaviour
     }
     private void OnTriggerEnter2D (Collider2D collision)
     {
+        if(collision.gameObject.tag=="Player")
+        {
+            collision.gameObject.GetComponent<CharacterControler>().TakeDamage(damage);
+        }
         Destroy(gameObject);
     }
 }

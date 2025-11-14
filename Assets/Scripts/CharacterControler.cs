@@ -1,4 +1,5 @@
 using JetBrains.Annotations;
+using System.Collections;
 using System.IO;
 using UnityEngine;
 
@@ -25,6 +26,9 @@ public class CharacterControler : MonoBehaviour
     private float coldDown;
     private float timePassFireBall;
     private Levelmanager levelManager;
+    public bool knockBack;
+    [SerializeField]
+    private float knockbackTime;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -39,8 +43,14 @@ public class CharacterControler : MonoBehaviour
     void Update()
 
     {
+        if (knockBack == true)
+        {
+            return;
+        }
+
+        //Movimiento
         if (comboCount == 0) 
-        { //Movimiento
+        { 
             float horizontal = Input.GetAxis("Horizontal");
             rb.linearVelocity = new Vector2(speed * horizontal, rb.linearVelocity.y);
 
@@ -157,11 +167,25 @@ public class CharacterControler : MonoBehaviour
             int comboAnimator = animator.GetInteger("Combo");
             if (comboAnimator > 0)
             {
-                collision.gameObject.GetComponent<EnemyController>().TakeDamage(GameManager.instance.GetGameData.PlayerDamage);
+                try
+                {               
+                    collision.gameObject.GetComponent<EnemyController>().TakeDamage(GameManager.instance.GetGameData.PlayerDamage);
+                }
+                catch
+                {
+                    collision.gameObject.GetComponent<BossController>().TakeDamage(GameManager.instance.GetGameData.PlayerDamage);
+                }
             }
             else
             {
-                collision.gameObject.GetComponent<EnemyController>().TakeDamage(GameManager.instance.GetGameData.HeavyDamage);
+                try
+                {
+                    collision.gameObject.GetComponent<EnemyController>().TakeDamage(GameManager.instance.GetGameData.HeavyDamage);
+                }
+                catch
+                {
+                    collision.gameObject.GetComponent<BossController>().TakeDamage(GameManager.instance.GetGameData.HeavyDamage);
+                }                         
             }
         }
     }
@@ -181,5 +205,12 @@ public class CharacterControler : MonoBehaviour
             //Recibe daño
             animator.SetTrigger("Hit");
         }
+    }
+
+    public IEnumerator KnockBackCoroutine()
+    {
+        knockBack = true;
+        yield return new WaitForSeconds(knockbackTime);
+        knockBack = false;
     }
 }
