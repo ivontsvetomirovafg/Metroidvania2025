@@ -55,6 +55,10 @@ public class EnemyController : MonoBehaviour
                 rb.linearVelocity = Vector2.zero;
             }
         }
+        else
+        {
+            GetComponent<Rigidbody2D>().linearVelocity= Vector2.zero;
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
