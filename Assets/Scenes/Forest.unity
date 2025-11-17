@@ -878,6 +878,7 @@ MonoBehaviour:
     heavyDamage: 50
     sceneSave: 0
     maxJumps: 1
+    boss1: 0
   slot: 0
   doorToGo: 0
   comeFromLoadGame: 0
@@ -10981,6 +10982,8 @@ MonoBehaviour:
   spawnPoint: {fileID: 2124684112}
   fireBallCost: 5
   coldDown: 1
+  knockBack: 0
+  knockbackTime: 0
 --- !u!70 &858629672
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -11220,11 +11223,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6103321433490498504, guid: c94c0501846bdc0419f44778876de36d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 14.48
+      value: 14.19
       objectReference: {fileID: 0}
     - target: {fileID: 6103321433490498504, guid: c94c0501846bdc0419f44778876de36d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.59
+      value: -1.54
       objectReference: {fileID: 0}
     - target: {fileID: 6103321433490498504, guid: c94c0501846bdc0419f44778876de36d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -11257,6 +11260,18 @@ PrefabInstance:
     - target: {fileID: 6103321433490498504, guid: c94c0501846bdc0419f44778876de36d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6653919142863439037, guid: c94c0501846bdc0419f44778876de36d, type: 3}
+      propertyPath: m_Color.b
+      value: 0.3567996
+      objectReference: {fileID: 0}
+    - target: {fileID: 6653919142863439037, guid: c94c0501846bdc0419f44778876de36d, type: 3}
+      propertyPath: m_Color.g
+      value: 0.3567996
+      objectReference: {fileID: 0}
+    - target: {fileID: 6653919142863439037, guid: c94c0501846bdc0419f44778876de36d, type: 3}
+      propertyPath: m_Color.r
+      value: 0.3584906
       objectReference: {fileID: 0}
     - target: {fileID: 6653919142863439037, guid: c94c0501846bdc0419f44778876de36d, type: 3}
       propertyPath: m_SortingOrder

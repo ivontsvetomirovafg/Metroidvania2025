@@ -119,6 +119,7 @@ public class BossController : MonoBehaviour
         {
             transform.eulerAngles = Vector3.zero;
         }
+        GetComponent<Rigidbody2D>().linearVelocity= Vector2.zero;
 
         yield return new WaitForSeconds(1);
 
