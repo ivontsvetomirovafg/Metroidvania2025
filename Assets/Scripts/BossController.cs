@@ -16,6 +16,8 @@ public class BossController : MonoBehaviour
     private float damage;
     [SerializeField]
     private float knockBackForce;
+    [SerializeField]
+    private Sprite muertoSprite;
 
     [Header ("Waiting")]
     [SerializeField]
@@ -63,14 +65,21 @@ public class BossController : MonoBehaviour
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
         animator = GetComponent<Animator>();
-        //Temporal
-        currentState = BossStates.Roar;
+        currentState = BossStates.Spikes;
         ChangeState();
-  
-        
     }
 
     // Update is called once per frame
+    public void SetDeathAtStart()
+    {
+        animator = GetComponent<Animator>();
+        animator.enabled = false;
+        GetComponent<SpriteRenderer>().sprite = muertoSprite;
+        GetComponent<CapsuleCollider2D>().enabled = false;
+        GetComponent<Rigidbody2D>().gravityScale = 0;
+        this.enabled = false;
+    }
+
     void Update()
     {
         
@@ -265,6 +274,7 @@ public class BossController : MonoBehaviour
             GetComponent<CapsuleCollider2D>().enabled = false;
             GetComponent<Rigidbody2D>().gravityScale = 0;
             this.enabled = false;
+            GameManager.instance.GetGameData.Boss1 = true;
         }
         else
         {

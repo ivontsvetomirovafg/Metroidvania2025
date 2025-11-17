@@ -7,6 +7,18 @@ public class LevelManagerBoss : Levelmanager
     [SerializeField]
     private Animator[] doorAnimator;
 
+    private void Start()
+    {
+        base.Start();
+        if (GameManager.instance.GetGameData.Boss1 == true)
+        {
+            for (int i = 0; i < doorAnimator.Length; i++)
+            {
+                doorAnimator[i].GetComponent<Collider2D>().enabled = false;
+            }
+            boss.SetDeathAtStart();
+        }
+    }
     public void StartBattle()
     {
         boss.enabled = true;
