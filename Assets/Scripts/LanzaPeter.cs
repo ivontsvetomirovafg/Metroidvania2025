@@ -4,6 +4,8 @@ public class LanzaPeter : MonoBehaviour
 {
     [SerializeField]
     private float speed;
+    [SerializeField]
+    private float damage;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -19,7 +21,7 @@ public class LanzaPeter : MonoBehaviour
     {
         if(collision.gameObject.tag == "Player")
         {
-            //Le hace pupa :(
+            collision.GetComponent<CharacterControler>().TakeDamage(damage);
             Debug.Log("Pupa al player");
         }
         Destroy(gameObject);
