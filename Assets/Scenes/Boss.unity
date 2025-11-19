@@ -7704,7 +7704,7 @@ MonoBehaviour:
   currentState: 0
   bossLife: 40
   damage: 20
-  knockBackForce: 350
+  knockBackForce: 300
   muertoSprite: {fileID: -707417940709540435, guid: 28f2d9836a1d6d74c9fd5c2c08808641, type: 3}
   waitingTime: 1
   maxJump: 7.5

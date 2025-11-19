@@ -197,6 +197,10 @@ public class CharacterControler : MonoBehaviour
         {
             //Muerte
             animator.SetTrigger("Death");
+            rb.gravityScale = 0;
+            rb.linearVelocity = Vector2.zero;
+            GetComponent<Collider2D>().enabled = false;
+            this.enabled = false;
             //Sacar panel GameOver
             //Cuando vuele
         }

@@ -92,6 +92,8 @@ public class EnemyController : MonoBehaviour
             rb.gravityScale = 0;
             GetComponent<Collider2D>().enabled = false;
             estoyMuerto = true;
+
+            //AudioClip test;
         }
         else
         {

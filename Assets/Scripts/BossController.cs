@@ -215,7 +215,7 @@ public class BossController : MonoBehaviour
             }
             else //izquierda
             {
-                collision.gameObject.GetComponent<Rigidbody2D>().AddForce(point.normal * knockBackForce);
+                collision.gameObject.GetComponent<Rigidbody2D>().AddForce(Vector2.left * knockBackForce);
             }
             StartCoroutine(collision.gameObject.GetComponent<CharacterControler>().KnockBackCoroutine());
         } 

@@ -30,7 +30,10 @@ public class ChestScript : MonoBehaviour
 
                 break;
             case "ExtraDamage":
-
+                if (GameManager.instance.GetGameData.PlayerDamage > 25)
+                {
+                    GetComponent<Collider2D>().enabled = false;
+                }
                 break;
             default:
 
@@ -83,8 +86,9 @@ public class ChestScript : MonoBehaviour
 
                 break;
             case "ExtraDamage":
-
+                GameManager.instance.GetGameData.PlayerDamage = 35;
                 break;
+
             default:
 
                 break;
