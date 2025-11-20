@@ -15,6 +15,6 @@ public class CamaraController : MonoBehaviour
         float x = Mathf.Clamp(player.position.x,minX,maxX);
         float y = Mathf.Clamp(player.position.y, minY, maxY);
 
-        transform.position = new Vector3(x, y, camOffset.z);
+        transform.position = new Vector3(x, y+camOffset.y, camOffset.z);
     }
 }
