@@ -1406,6 +1406,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chest (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7182152546404204289, guid: 52524fdf39b94a449a7f0706a1388854, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.13
+      objectReference: {fileID: 0}
     - target: {fileID: 7577598557497811392, guid: 52524fdf39b94a449a7f0706a1388854, type: 3}
       propertyPath: gemaName
       value: ExtraDamage
@@ -1450,6 +1454,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7949016482693467606, guid: 52524fdf39b94a449a7f0706a1388854, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 3239434445158686115, guid: 426682878233a7a4f9b69bca17ee4996, type: 3}
     - target: {fileID: 7949016482693467606, guid: 52524fdf39b94a449a7f0706a1388854, type: 3}
       propertyPath: m_Color.b
       value: 0
