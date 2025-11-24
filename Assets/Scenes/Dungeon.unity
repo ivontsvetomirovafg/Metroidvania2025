@@ -2947,7 +2947,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3056818551512613493, guid: ce4c08e4475aca64a8e2b2cb09165e49, type: 3}
       propertyPath: doorPoint
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3056818551512613493, guid: ce4c08e4475aca64a8e2b2cb09165e49, type: 3}
       propertyPath: sceneToGo
