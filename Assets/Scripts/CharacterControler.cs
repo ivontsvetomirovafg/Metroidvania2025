@@ -47,7 +47,10 @@ public class CharacterControler : MonoBehaviour
         {
             return;
         }
-
+        if (GameManager.instance.GetGameData.Playerlife <= 0)
+        {
+            return;
+        }
         //Movimiento
         if (comboCount == 0) 
         { 
@@ -197,9 +200,7 @@ public class CharacterControler : MonoBehaviour
         {
             //Muerte
             animator.SetTrigger("Death");
-            rb.gravityScale = 0;
             rb.linearVelocity = Vector2.zero;
-            GetComponent<Collider2D>().enabled = false;
             this.enabled = false;
             //Sacar panel GameOver
             //Cuando vuele
@@ -215,6 +216,7 @@ public class CharacterControler : MonoBehaviour
     {
         knockBack = true;
         yield return new WaitForSeconds(knockbackTime);
+         rb.linearVelocity = Vector2.zero;
         knockBack = false;
     }
 }

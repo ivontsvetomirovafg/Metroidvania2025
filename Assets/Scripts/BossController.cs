@@ -87,6 +87,12 @@ public class BossController : MonoBehaviour
 
     void ChangeState()
     {
+        if (GameManager.instance.GetGameData.Playerlife <= 0)
+        {
+            animator.SetBool("Attacking", false);
+            animator.SetBool("PlayerDetected", false);
+            return;
+        }
         switch (currentState)
         {
             case BossStates.Waiting:
@@ -111,6 +117,7 @@ public class BossController : MonoBehaviour
     }
     IEnumerator WaitingCoroutine()
     {
+
         if(transform.position.x < player.position.x)
         {
             transform.eulerAngles = new Vector3(0, 180, 0);
@@ -279,7 +286,8 @@ public class BossController : MonoBehaviour
         }
         else
         {
-
+            //hit
+            animator.SetTrigger("Hit");           
         }
     }
 }

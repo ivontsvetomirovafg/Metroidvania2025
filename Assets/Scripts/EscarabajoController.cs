@@ -2,6 +2,9 @@ using UnityEngine;
 
 public class EscarabajoController : EnemyController
 {
+
+
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -11,6 +14,14 @@ public class EscarabajoController : EnemyController
     // Update is called once per frame
     void Update()
     {
+        if (GameManager.instance.GetGameData.Playerlife <= 0)
+        {
+            attacking = false;
+            rb.linearVelocity = Vector2.zero;
+            animator.SetBool("Attacking", false);
+            animator.SetBool("PlayerDetected", false);
+            return;
+        }
         base.Update();
         if (attacking == true)
         {

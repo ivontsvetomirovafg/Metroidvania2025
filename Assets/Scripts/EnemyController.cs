@@ -9,7 +9,7 @@ public class EnemyController : MonoBehaviour
     [SerializeField]
     private float speed;
     private bool playerDetected;
-    private Rigidbody2D rb;
+    public Rigidbody2D rb;
     public Animator animator;
     public Transform player;
     public float stopDistance;
@@ -38,12 +38,12 @@ public class EnemyController : MonoBehaviour
             Vector3 distancia = player.transform.position - transform.position;
             if(distancia.x>0) //derecha
             {
-                rb.linearVelocity = speed * Vector2.right;
+                rb.linearVelocity = new Vector2 (1 * speed, rb.linearVelocity.y);
                 transform.eulerAngles = new Vector3(0, 180, 0);
             }
             else if (distancia.x<0) //izquierda
             {
-                rb.linearVelocity=speed * Vector2.left;
+                rb.linearVelocity= new Vector2 (-1 * speed, rb.linearVelocity.y);
                 transform.eulerAngles = Vector3.zero;
             }
 

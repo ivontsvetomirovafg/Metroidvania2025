@@ -572,6 +572,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7894692940832458810, guid: 1ca2f2a6444254748a81f79d2e6f12d9, type: 3}
+      propertyPath: knockbackTime
+      value: 0.75
+      objectReference: {fileID: 0}
     - target: {fileID: 8438022316624992718, guid: 1ca2f2a6444254748a81f79d2e6f12d9, type: 3}
       propertyPath: m_Name
       value: Player
@@ -7407,9 +7411,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BossController
   currentState: 0
-  bossLife: 40
+  bossLife: 200
   damage: 20
-  knockBackForce: 300
+  knockBackForce: 350
   muertoSprite: {fileID: -707417940709540435, guid: 28f2d9836a1d6d74c9fd5c2c08808641, type: 3}
   waitingTime: 1
   maxJump: 7.5
@@ -7431,7 +7435,7 @@ MonoBehaviour:
   - {fileID: 1977682387}
   - {fileID: 775699812}
   spikesTime: 0.87
-  tiredTime: 0.78
+  tiredTime: 0.5
 --- !u!4 &2035722086 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 74822294678092666, guid: 912f096b666b75f4ea4ca3210c610072, type: 3}

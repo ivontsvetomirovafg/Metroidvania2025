@@ -16,6 +16,14 @@ public class GoblinController : EnemyController
     // Update is called once per frame
     void Update()
     {
+        if (GameManager.instance.GetGameData.Playerlife <= 0)
+        {
+            attacking = false;
+            rb.linearVelocity = Vector2.zero;
+            animator.SetBool("Attacking", false);
+            animator.SetBool("PlayerDetected", false);
+            return;
+        }
         base.Update();
         if (attacking == true)
         {

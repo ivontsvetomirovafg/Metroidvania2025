@@ -26,7 +26,7 @@ Transform:
   m_GameObject: {fileID: 1136468426045192219}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.08, y: 0.21, z: 0}
+  m_LocalPosition: {x: -0.91, y: 0.39, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -67,7 +67,7 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 3.13
+  m_Radius: 3.58
 --- !u!1 &7978537953587924431
 GameObject:
   m_ObjectHideFlags: 0
@@ -152,7 +152,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 99
-  m_Sprite: {fileID: 7405485397502971187, guid: 4e9fe9d5f006f2f46a10ebf89a50945c, type: 3}
+  m_Sprite: {fileID: 258881067832302799, guid: eb29c34a9b3c34d45ac723c4357815cd, type: 3}
   m_Color: {r: 0.5698112, g: 0.5698112, b: 0.5698112, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -197,12 +197,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3bbdb903286eaf428c382c2d49ba806, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GusanoController
-  life: 0
-  damage: 0
-  speed: 0
-  animator: {fileID: 0}
+  life: 15
+  damage: 3.24
+  speed: 3.28
+  animator: {fileID: 5165199969260568283}
   player: {fileID: 0}
-  stopDistance: 0
+  stopDistance: 0.24
   attacking: 0
 --- !u!50 &526827929397184929
 Rigidbody2D:
@@ -212,7 +212,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7978537953587924431}
-  m_BodyType: 0
+  m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -230,7 +230,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 7
 --- !u!70 &7762806908031436688
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
