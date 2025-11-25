@@ -92,6 +92,7 @@ GameObject:
   - component: {fileID: 4227513224228405905}
   - component: {fileID: 8309456045611591426}
   - component: {fileID: 5275925717964314654}
+  - component: {fileID: 3180308960630050914}
   m_Layer: 7
   m_Name: Rana
   m_TagString: Enemy
@@ -211,6 +212,7 @@ MonoBehaviour:
   life: 60
   damage: 25
   speed: 2
+  rb: {fileID: 0}
   animator: {fileID: 559231154288071283}
   player: {fileID: 0}
   stopDistance: 3
@@ -279,6 +281,22 @@ CapsuleCollider2D:
   m_Offset: {x: -0.01801553, y: -0.20402296}
   m_Size: {x: 1.4271454, y: 0.9851078}
   m_Direction: 1
+--- !u!111 &3180308960630050914
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2537475963415712614}
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Animation: {fileID: 0}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_UpdateMode: 0
+  m_CullingType: 0
 --- !u!1 &3730959425648715801
 GameObject:
   m_ObjectHideFlags: 0
