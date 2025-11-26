@@ -4,7 +4,9 @@ public class ChestScript : MonoBehaviour
 {
     [SerializeField]
     private GameObject iconUI;
+    [SerializeField]   
     private bool inTrigger;
+    private bool inLife;
     private Animator animator;
     [SerializeField]
     private string gemaName;
@@ -23,8 +25,11 @@ public class ChestScript : MonoBehaviour
                     GetComponent<Collider2D>().enabled = false;
                 }
                 break;
-            case "TripleSalto":
-
+            case "Vida":
+                if (GameManager.instance.GetGameData.Playerlife > 100)
+                {
+                    GetComponent<Collider2D>().enabled = false;
+                }
                 break;
             case "Dash":
 
@@ -79,8 +84,9 @@ public class ChestScript : MonoBehaviour
             case "DobleSalto":
                 GameManager.instance.GetGameData.MaxJumps = 2;
                 break;
-            case "TripleSalto":
+            case "Vida":
 
+                GameManager.instance.GetGameData.Playerlife = GameManager.instance.GetGameData.PlayerMaxLife;
                 break;
             case "Dash":
 
