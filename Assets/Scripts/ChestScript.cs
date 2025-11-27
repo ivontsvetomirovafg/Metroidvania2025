@@ -12,11 +12,14 @@ public class ChestScript : MonoBehaviour
     private string gemaName;
     private Animator animator2;
     [SerializeField]
-    private ParticleSystem particulas;
+    private ParticleSystem particulas, burbujas;
+    [SerializeField] 
+    private GameObject light;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        burbujas.Play();
         switch (gemaName)
         {
             case "DobleSalto":
@@ -29,6 +32,7 @@ public class ChestScript : MonoBehaviour
                 if (GameManager.instance.GetGameData.Playerlife > 100)
                 {
                     GetComponent<Collider2D>().enabled = false;
+                    light.SetActive(false);
                 }
                 break;
             case "Dash":
