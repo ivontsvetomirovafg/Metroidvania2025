@@ -42,7 +42,6 @@ public class MenuController : MonoBehaviour
     public void GameOver()
     {
         panelGameOver.SetActive(true);
-        Time.timeScale = 0;
     }
     public void Pause()
     {

@@ -15,6 +15,7 @@ public class CharacterControler : MonoBehaviour
     private float jumpForce;
     [SerializeField]
     private float groundDistance;
+    private MenuController menu;
 
     [SerializeField]
     private GameObject fireBallPrefab;
@@ -37,6 +38,7 @@ public class CharacterControler : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponentInChildren<Animator>();
         levelManager = GameObject.Find("LevelManager").GetComponent<Levelmanager>();
+        menu = GameObject.Find("MenuController").GetComponent<MenuController>();
     }
 
     // Update is called once per frame
@@ -200,9 +202,8 @@ public class CharacterControler : MonoBehaviour
             //Muerte
             animator.SetTrigger("Death");
             rb.linearVelocity = Vector2.zero;
-            this.enabled = false;
-            //Sacar panel GameOver
-            //Cuando vuele
+            this.enabled = false;       
+            menu.GameOver();          
         }
         else
         {
@@ -215,7 +216,7 @@ public class CharacterControler : MonoBehaviour
     {
         knockBack = true;
         yield return new WaitForSeconds(knockbackTime);
-         rb.linearVelocity = Vector2.zero;
+        rb.linearVelocity = Vector2.zero;
         knockBack = false;
     }
     
