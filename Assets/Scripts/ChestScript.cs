@@ -20,6 +20,7 @@ public class ChestScript : MonoBehaviour
     void Start()
     {
         burbujas.Play();
+        animator = GetComponent<Animator>();
         switch (gemaName)
         {
             case "DobleSalto":
@@ -29,10 +30,11 @@ public class ChestScript : MonoBehaviour
                 }
                 break;
             case "Vida":
-                if (GameManager.instance.GetGameData.Playerlife > 100)
+                if (GameManager.instance.GetGameData.Playerlife >= GameManager.instance.GetGameData.PlayerMaxLife)
                 {
                     GetComponent<Collider2D>().enabled = false;
                     light.SetActive(false);
+                    animator.SetTrigger("CofreAbrir");
                 }
                 break;
             case "Dash":
@@ -48,7 +50,6 @@ public class ChestScript : MonoBehaviour
 
                 break;
         }
-        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -91,6 +92,9 @@ public class ChestScript : MonoBehaviour
             case "Vida":
 
                 GameManager.instance.GetGameData.Playerlife = GameManager.instance.GetGameData.PlayerMaxLife;
+                light.SetActive(false);
+                particulas.Stop();
+
                 break;
             case "Dash":
 

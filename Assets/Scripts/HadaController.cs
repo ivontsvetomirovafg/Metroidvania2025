@@ -8,6 +8,9 @@ public class HadaController : EnemyController
     [SerializeField]
     private float speedDown;
     private bool animacionBajar;
+    private ParticleSystem particulas, burbujas;
+    [SerializeField]
+    private GameObject luz;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -37,7 +40,7 @@ public class HadaController : EnemyController
                 attacking = false;
                 animator.SetBool("Attacking", false);
             }
-        }      
+        }    
     }
     IEnumerator BajarAtaque ()
     {
@@ -63,5 +66,9 @@ public class HadaController : EnemyController
           }
           animacionBajar = false;    
         }
+    }
+    public void ApagarLuz()
+    {
+        luz.SetActive(false);
     }
 }

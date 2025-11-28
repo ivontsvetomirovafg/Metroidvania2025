@@ -6274,6 +6274,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2763649972736119271, guid: 52524fdf39b94a449a7f0706a1388854, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6351888336290665893, guid: 52524fdf39b94a449a7f0706a1388854, type: 3}
       propertyPath: m_Name
       value: Chest

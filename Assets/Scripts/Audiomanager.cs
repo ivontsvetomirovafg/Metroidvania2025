@@ -1,9 +1,9 @@
 using System.Collections;
 using UnityEngine;
 
-public class Audiomanager : MonoBehaviour
+public class AudioManager : MonoBehaviour
 {
-    public static Audiomanager Instance;
+    public static AudioManager Instance;
     private AudioSource musicSource;
     private AudioSource ambientSource;
     private AudioSource[] sfxSource;

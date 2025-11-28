@@ -14,7 +14,7 @@ public class EnemyController : MonoBehaviour
     public Transform player;
     public float stopDistance;
     public bool attacking;
-    private bool estoyMuerto;
+    public bool estoyMuerto;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -92,7 +92,6 @@ public class EnemyController : MonoBehaviour
             rb.gravityScale = 0;
             GetComponent<Collider2D>().enabled = false;
             estoyMuerto = true;
-
             //AudioClip test;
         }
         else
