@@ -92,7 +92,6 @@ public class CharacterControler : MonoBehaviour
                     timePassFireBall = 0; 
                 }
             }
-
         }
         else
         {
@@ -207,7 +206,7 @@ public class CharacterControler : MonoBehaviour
         }
         else
         {
-            //Recibe daño
+            //Recibe daï¿½o
             animator.SetTrigger("Hit");
         }
     }
@@ -219,4 +218,5 @@ public class CharacterControler : MonoBehaviour
          rb.linearVelocity = Vector2.zero;
         knockBack = false;
     }
+    
 }
