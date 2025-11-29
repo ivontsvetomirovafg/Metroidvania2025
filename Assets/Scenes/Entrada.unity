@@ -3303,7 +3303,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 818105397}
         m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
         m_MethodName: MainMenuButton
         m_Mode: 1
@@ -4437,7 +4437,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 818105397}
         m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
         m_MethodName: RestartButton
         m_Mode: 1
