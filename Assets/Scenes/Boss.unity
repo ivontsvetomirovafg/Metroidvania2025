@@ -1394,34 +1394,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7894692940832458810, guid: 1ca2f2a6444254748a81f79d2e6f12d9, type: 3}
-      propertyPath: fire
-      value: 
-      objectReference: {fileID: 8300000, guid: 1874b2b588aee33489ded437600bbb1d, type: 3}
-    - target: {fileID: 7894692940832458810, guid: 1ca2f2a6444254748a81f79d2e6f12d9, type: 3}
-      propertyPath: jump
-      value: 
-      objectReference: {fileID: 8300000, guid: b5b725c0a3c49a8488dd637a34fd74b2, type: 3}
-    - target: {fileID: 7894692940832458810, guid: 1ca2f2a6444254748a81f79d2e6f12d9, type: 3}
-      propertyPath: muerte
-      value: 
-      objectReference: {fileID: 8300000, guid: 095044ff5c0ed4e46b669fa9955a3d2c, type: 3}
-    - target: {fileID: 7894692940832458810, guid: 1ca2f2a6444254748a81f79d2e6f12d9, type: 3}
-      propertyPath: selfHit
-      value: 
-      objectReference: {fileID: 8300000, guid: f6e604b62e2ba794f936457a496637cc, type: 3}
-    - target: {fileID: 7894692940832458810, guid: 1ca2f2a6444254748a81f79d2e6f12d9, type: 3}
-      propertyPath: ataqueBasico
-      value: 
-      objectReference: {fileID: 8300000, guid: b7f6363de2c8d1a4bafeb4de8049e4e3, type: 3}
-    - target: {fileID: 7894692940832458810, guid: 1ca2f2a6444254748a81f79d2e6f12d9, type: 3}
-      propertyPath: ataqueFuerte
-      value: 
-      objectReference: {fileID: 8300000, guid: 562d46fe1a7f2c042839b7e45d9f9a83, type: 3}
-    - target: {fileID: 7894692940832458810, guid: 1ca2f2a6444254748a81f79d2e6f12d9, type: 3}
-      propertyPath: knockbackTime
-      value: 0.75
-      objectReference: {fileID: 0}
     - target: {fileID: 8438022316624992718, guid: 1ca2f2a6444254748a81f79d2e6f12d9, type: 3}
       propertyPath: m_Name
       value: Player
@@ -9239,7 +9211,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.57851744, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0.03846154, y: 0, z: 0.03846154, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -9249,7 +9221,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.4615384, y: 2.5384614}
+  m_Size: {x: 0.30450344, y: 2.5384614}
   m_EdgeRadius: 0
 --- !u!95 &1076125339
 Animator:
@@ -10122,7 +10094,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 27.750122, y: -9.220028}
+  m_AnchoredPosition: {x: 27.75, y: -9.219971}
   m_SizeDelta: {x: -1109.7002, y: -96.35995}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1585909659
@@ -10704,7 +10676,7 @@ CapsuleCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 512
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2

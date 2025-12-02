@@ -357,10 +357,10 @@ MonoBehaviour:
   fireBallCost: 5
   coldDown: 1
   knockBack: 0
-  knockbackTime: 0
-  jump: {fileID: 0}
-  fire: {fileID: 0}
-  selfHit: {fileID: 0}
-  ataqueBasico: {fileID: 0}
-  ataqueFuerte: {fileID: 0}
-  muerte: {fileID: 0}
+  knockbackTime: 0.75
+  jump: {fileID: 8300000, guid: ff9b1b515672f6a4fa6a745625bd937f, type: 3}
+  fire: {fileID: 8300000, guid: 09ceb417698cca24698e5b3821c4ef4c, type: 3}
+  selfHit: {fileID: 8300000, guid: f17c858ab4b805c4bae220a76e73db54, type: 3}
+  ataqueBasico: {fileID: 8300000, guid: 87cc4b055d74888429af0c94f1380cf2, type: 3}
+  ataqueFuerte: {fileID: 8300000, guid: f1a3d900317a4d54ab048922730c7e70, type: 3}
+  muerte: {fileID: 8300000, guid: 6e036a01fdf07a24d99af7e695f47a62, type: 3}

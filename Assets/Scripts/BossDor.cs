@@ -21,7 +21,7 @@ public class BossDor : MonoBehaviour
     {
         if (puertaDos == true )
         {
-            if (GameManager.instance.GetGameData.Boss1 == false)
+            if (GameManager.instance.GetGameData.Boss1 == true)
             {
                 GetComponent<Collider2D>().isTrigger = true;
             }
