@@ -3,6 +3,8 @@ using UnityEngine;
 public class ComboChecking : MonoBehaviour
 {
     private CharacterControler player;
+    [SerializeField]
+    private AudioClip steps;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -26,5 +28,9 @@ public class ComboChecking : MonoBehaviour
     public void FinishAttack3()
     {
         player.FinishHeavyAttack();
+    }
+    public void MakeStep()
+    {
+        AudioManager.Instance.PlaySFX(steps);
     }
 }

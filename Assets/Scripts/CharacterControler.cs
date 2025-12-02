@@ -31,6 +31,19 @@ public class CharacterControler : MonoBehaviour
     [SerializeField]
     private float knockbackTime;
 
+    [SerializeField]
+    private AudioClip jump;
+    [SerializeField]
+    private AudioClip fire;
+    [SerializeField]
+    private AudioClip selfHit;
+    [SerializeField]
+    private AudioClip ataqueBasico;
+    [SerializeField]
+    private AudioClip ataqueFuerte;
+    [SerializeField]
+    private AudioClip muerte;
+    
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -78,6 +91,7 @@ public class CharacterControler : MonoBehaviour
             //Salto
             if (Input.GetButtonDown("Jump") && jumpCount < GameManager.instance.GetGameData.MaxJumps)
             {
+                AudioManager.Instance.PlaySFX(jump);
                 rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
                 jumpCount++;
             }
@@ -88,6 +102,7 @@ public class CharacterControler : MonoBehaviour
             {
                 if (coldDown <= timePassFireBall && GameManager.instance.GetGameData.PlayerMana >= fireBallCost)
                 {
+                    AudioManager.Instance.PlaySFX(fire);
                     Instantiate(fireBallPrefab, spawnPoint.position, spawnPoint.rotation);
                     GameManager.instance.GetGameData.PlayerMana -= fireBallCost;
                     levelManager.UpdateMana();
@@ -105,12 +120,14 @@ public class CharacterControler : MonoBehaviour
         {
             if (Input.GetButtonDown("Fire1"))
             {
+                AudioManager.Instance.PlaySFX(ataqueBasico);
                 comboCount = Mathf.Clamp(comboCount + 1, 0, 2);
                 animator.SetInteger("Combo", comboCount);
 
             }
             if(Input.GetButtonDown("Fire2") && comboCount==0)
             {
+                AudioManager.Instance.PlaySFX(ataqueFuerte);
                 animator.SetTrigger("AtackHeavy");
                 comboCount = 1; 
             }
@@ -200,6 +217,7 @@ public class CharacterControler : MonoBehaviour
         if(GameManager.instance.GetGameData.Playerlife <=0)
         {
             //Muerte
+            AudioManager.Instance.PlaySFX(muerte);
             animator.SetTrigger("Death");
             rb.linearVelocity = Vector2.zero;
             this.enabled = false;       
@@ -208,6 +226,7 @@ public class CharacterControler : MonoBehaviour
         else
         {
             //Recibe da�o
+            AudioManager.Instance.PlaySFX(selfHit);
             animator.SetTrigger("Hit");
         }
     }
@@ -219,5 +238,4 @@ public class CharacterControler : MonoBehaviour
         rb.linearVelocity = Vector2.zero;
         knockBack = false;
     }
-    
 }

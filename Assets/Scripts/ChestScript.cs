@@ -15,6 +15,10 @@ public class ChestScript : MonoBehaviour
     private ParticleSystem particulas, burbujas;
     [SerializeField] 
     private GameObject light;
+    [SerializeField]
+    private AudioClip cofre;
+    [SerializeField]
+    private AudioClip pocion;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -59,6 +63,7 @@ public class ChestScript : MonoBehaviour
         {
             if(Input.GetButtonDown("Action"))
             {
+                AudioManager.Instance.PlaySFX(cofre);
                 animator.SetTrigger("CofreAbrir");
                 iconUI.SetActive(false);
                 Time.timeScale = 0;
@@ -90,7 +95,7 @@ public class ChestScript : MonoBehaviour
                 GameManager.instance.GetGameData.MaxJumps = 2;
                 break;
             case "Vida":
-
+                AudioManager.Instance.PlaySFX(pocion);
                 GameManager.instance.GetGameData.Playerlife = GameManager.instance.GetGameData.PlayerMaxLife;
                 light.SetActive(false);
                 particulas.Stop();

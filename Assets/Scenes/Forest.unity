@@ -22181,6 +22181,10 @@ PrefabInstance:
       value: Peter
       objectReference: {fileID: 0}
     - target: {fileID: 6490882230483855197, guid: c8e8041e41c27ba47aaa13a02812d376, type: 3}
+      propertyPath: dead
+      value: 
+      objectReference: {fileID: 8300000, guid: b6f3b66e0d742c9429405f3196a419a4, type: 3}
+    - target: {fileID: 6490882230483855197, guid: c8e8041e41c27ba47aaa13a02812d376, type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 858629670}

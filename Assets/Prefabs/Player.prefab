@@ -128,6 +128,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0a92e2ea3c4b31409dc0bbd404752b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ComboChecking
+  steps: {fileID: 8300000, guid: ead3d5b5908c71c44b23bfc3c9e6918b, type: 3}
 --- !u!1 &5210620413409960775
 GameObject:
   m_ObjectHideFlags: 0
@@ -357,3 +358,9 @@ MonoBehaviour:
   coldDown: 1
   knockBack: 0
   knockbackTime: 0
+  jump: {fileID: 0}
+  fire: {fileID: 0}
+  selfHit: {fileID: 0}
+  ataqueBasico: {fileID: 0}
+  ataqueFuerte: {fileID: 0}
+  muerte: {fileID: 0}

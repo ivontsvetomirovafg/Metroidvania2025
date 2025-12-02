@@ -15,7 +15,11 @@ public class EnemyController : MonoBehaviour
     public float stopDistance;
     public bool attacking;
     public bool estoyMuerto;
-
+    
+    [SerializeField]
+    private AudioClip dead;
+    [SerializeField]
+    private AudioClip hit;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public void Start()
@@ -88,15 +92,17 @@ public class EnemyController : MonoBehaviour
         if (life <=0)
         {
             //muerte
+            AudioManager.Instance.PlaySFX(dead);
+
             animator.SetTrigger("Death");
             rb.gravityScale = 0;
             GetComponent<Collider2D>().enabled = false;
             estoyMuerto = true;
-            //AudioClip test;
         }
         else
         {
             //hit
+            AudioManager.Instance.PlaySFX(hit);
             animator.SetTrigger("Hit");
         }
     }
