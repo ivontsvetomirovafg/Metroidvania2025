@@ -55,6 +55,7 @@ public class EnemyController : MonoBehaviour
             float distanceSqr= distance.sqrMagnitude;
             if (distanceSqr <= Mathf.Pow(stopDistance,2))
             {
+                AudioManager.Instance.PlaySFX(hit);
                 attacking = true;
                 rb.linearVelocity = Vector2.zero;
             }
@@ -102,7 +103,6 @@ public class EnemyController : MonoBehaviour
         else
         {
             //hit
-            AudioManager.Instance.PlaySFX(hit);
             animator.SetTrigger("Hit");
         }
     }

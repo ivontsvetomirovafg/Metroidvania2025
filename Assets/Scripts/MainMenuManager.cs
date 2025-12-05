@@ -6,6 +6,9 @@ public class mainMenuManager : MonoBehaviour
     [SerializeField]
     private GameObject panelSlots;
     private bool newGame;
+    [SerializeField]
+    private AudioClip sound;
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -19,6 +22,7 @@ public class mainMenuManager : MonoBehaviour
     }
     public void StartButton(bool _newGame)
     {
+        AudioManager.Instance.PlaySFX(sound);
         panelSlots.SetActive(true);
         newGame = _newGame;
     }
@@ -26,6 +30,8 @@ public class mainMenuManager : MonoBehaviour
     {
         if (newGame == true)
         {
+            AudioManager.Instance.PlaySFX(sound);
+
             GameManager.instance.GetGameData = new GameData();
             GameManager.instance.slot = _slot;
             GameManager.instance.GetGameData.Playerlife = 100;
@@ -43,13 +49,17 @@ public class mainMenuManager : MonoBehaviour
         {
             if (PlayerPrefs.HasKey("data" + _slot.ToString()))
             {
+                AudioManager.Instance.PlaySFX(sound);
+
                 GameManager.instance.slot = _slot;
                 GameManager.instance.LoadGame();
                 GameManager.instance.comeFromLoadGame = true;
-              SceneManager.LoadScene(GameManager.instance.GetGameData.SceneSave);
+                SceneManager.LoadScene(GameManager.instance.GetGameData.SceneSave);
             }
             else
             {
+                AudioManager.Instance.PlaySFX(sound);
+                
                 GameManager.instance.GetGameData = new GameData();
                 GameManager.instance.slot = _slot;
                 GameManager.instance.GetGameData.Playerlife = 100;

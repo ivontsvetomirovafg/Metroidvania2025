@@ -200,10 +200,14 @@ MonoBehaviour:
   life: 15
   damage: 3.24
   speed: 3.28
+  rb: {fileID: 0}
   animator: {fileID: 5165199969260568283}
   player: {fileID: 0}
   stopDistance: 0.24
   attacking: 0
+  estoyMuerto: 0
+  dead: {fileID: 8300000, guid: f7e61962bf06ead4196c79de5d9c92fe, type: 3}
+  hit: {fileID: 0}
 --- !u!50 &526827929397184929
 Rigidbody2D:
   serializedVersion: 5

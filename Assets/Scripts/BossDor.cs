@@ -23,6 +23,7 @@ public class BossDor : MonoBehaviour
         {
             if (GameManager.instance.GetGameData.Boss1 == true)
             {
+                animator.SetBool("Close", false);
                 GetComponent<Collider2D>().isTrigger = true;
             }
             else

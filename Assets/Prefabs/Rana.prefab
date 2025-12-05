@@ -217,6 +217,9 @@ MonoBehaviour:
   player: {fileID: 0}
   stopDistance: 3
   attacking: 0
+  estoyMuerto: 0
+  dead: {fileID: 8300000, guid: f7e61962bf06ead4196c79de5d9c92fe, type: 3}
+  hit: {fileID: 0}
 --- !u!50 &8309456045611591426
 Rigidbody2D:
   serializedVersion: 5

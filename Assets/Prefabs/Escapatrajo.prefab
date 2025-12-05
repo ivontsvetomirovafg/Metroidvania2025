@@ -133,10 +133,14 @@ MonoBehaviour:
   life: 50
   damage: 15
   speed: 1
+  rb: {fileID: 0}
   animator: {fileID: 2995242580991372987}
   player: {fileID: 0}
   stopDistance: 2
   attacking: 0
+  estoyMuerto: 0
+  dead: {fileID: 8300000, guid: f7e61962bf06ead4196c79de5d9c92fe, type: 3}
+  hit: {fileID: 0}
 --- !u!50 &3354089245064545721
 Rigidbody2D:
   serializedVersion: 5
@@ -152,7 +156,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 20
+  m_GravityScale: 50
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2

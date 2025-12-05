@@ -296,9 +296,13 @@ MonoBehaviour:
   life: 60
   damage: 25
   speed: 3
+  rb: {fileID: 0}
   animator: {fileID: 5809979009958569091}
   player: {fileID: 0}
   stopDistance: 7
   attacking: 0
+  estoyMuerto: 0
+  dead: {fileID: 8300000, guid: f17c858ab4b805c4bae220a76e73db54, type: 3}
+  hit: {fileID: 0}
   lanzaPrefab: {fileID: 450471168511181736, guid: 6b75ba575dfd02740aa77ca39157acc1, type: 3}
   spawnPoint: {fileID: 6180911688500215875}

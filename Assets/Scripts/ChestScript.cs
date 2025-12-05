@@ -23,7 +23,6 @@ public class ChestScript : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        burbujas.Play();
         animator = GetComponent<Animator>();
         switch (gemaName)
         {
@@ -36,6 +35,7 @@ public class ChestScript : MonoBehaviour
             case "Vida":
                 if (GameManager.instance.GetGameData.Playerlife >= GameManager.instance.GetGameData.PlayerMaxLife)
                 {
+                    burbujas.Play();
                     GetComponent<Collider2D>().enabled = false;
                     light.SetActive(false);
                     animator.SetTrigger("CofreAbrir");

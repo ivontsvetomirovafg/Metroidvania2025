@@ -58,7 +58,19 @@ public class BossController : MonoBehaviour
     private float spikesTime;
     [SerializeField]
     private float tiredTime;
-    
+
+    [Header("Sound")]
+    [SerializeField]
+    private AudioClip roar;
+    [SerializeField]
+    private AudioClip dead;
+    [SerializeField]
+    private AudioClip jump;
+    [SerializeField]
+    private AudioClip roll;
+    [SerializeField]
+    private AudioClip spikes;
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -145,6 +157,7 @@ public class BossController : MonoBehaviour
     }
     IEnumerator JumpCoroutine()
     {
+        AudioManager.Instance.PlaySFX(jump);
         animator.SetBool("Jumping", true);
         yield return new WaitForSeconds(timeToJump);
 
@@ -169,6 +182,7 @@ public class BossController : MonoBehaviour
     }
     IEnumerator RoarCoroutine()
     {
+        AudioManager.Instance.PlaySFX(roar);
         animator.SetBool("Roar", true);
         yield return new WaitForSeconds(timeToSpawn);
         Instantiate(escapatrajoPrefab, escapatrajoSpawnPoint.position, escapatrajoSpawnPoint.rotation);
@@ -180,6 +194,7 @@ public class BossController : MonoBehaviour
     }
     IEnumerator RollCoroutine()
     {
+        AudioManager.Instance.PlaySFX(roll);
         animator.SetBool("Roll", true);
         collisioned = false;
         yield return new WaitForSeconds(timeToRoll);
@@ -249,6 +264,7 @@ public class BossController : MonoBehaviour
     }
     IEnumerator SpikesCoroutine()
     {
+        AudioManager.Instance.PlaySFX(spikes);
         animator.SetBool("Spikes", true);
         CapsuleCollider2D collider = GetComponent<CapsuleCollider2D>();
         float standarColliderX = collider.size.x;
@@ -277,6 +293,7 @@ public class BossController : MonoBehaviour
         if(bossLife <= 0)
         {
             //muerto
+            AudioManager.Instance.PlaySFX(dead);
             animator.SetTrigger("Death");
             StopAllCoroutines();
             GetComponent<CapsuleCollider2D>().enabled = false;
