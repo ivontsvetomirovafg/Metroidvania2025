@@ -10,6 +10,14 @@ public class Levelmanager : MonoBehaviour
     [SerializeField]
     private Transform[] doorsPoints;
 
+    [Header("Cam")]
+    [SerializeField]
+    public float MinX = 0;
+    public float MaxX = 23;
+    public float MinY = 0;
+    public float MaxY = 5;
+
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public void Start()
     {
@@ -26,11 +34,6 @@ public class Levelmanager : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     public void UpdateLife()
     {
         lifeBar.fillAmount = GameManager.instance.GetGameData.Playerlife / GameManager.instance.GetGameData.PlayerMaxLife;

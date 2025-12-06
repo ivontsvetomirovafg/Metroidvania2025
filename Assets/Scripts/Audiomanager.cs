@@ -18,7 +18,7 @@ public class AudioManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        musicSource = gameObject.AddComponent <AudioSource>();
+        musicSource = GetComponent<AudioSource>();
         musicSource.loop = true;
         ambientSource = gameObject.AddComponent<AudioSource>();
         ambientSource.loop = true;
@@ -45,10 +45,11 @@ public class AudioManager : MonoBehaviour
     }
     IEnumerator FadeOutAudio (AudioSource source, float _speed)
     {
+        float targetVolume = 0.25f; // prueba
         float volume = source.volume;
-        while(volume>0)
+        while(volume>targetVolume)
         {
-            volume -= Time.deltaTime * _speed;
+            volume -= Time.unscaledDeltaTime * _speed;
             source.volume = volume;
             yield return null;
         }
@@ -80,5 +81,9 @@ public class AudioManager : MonoBehaviour
                 break;
             }
         }
+    }
+    public void SetMusicVolume(float volume)
+    {
+        musicSource.volume = volume;
     }
 }

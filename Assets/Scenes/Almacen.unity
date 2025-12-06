@@ -2369,7 +2369,7 @@ MonoBehaviour:
   burbujas: {fileID: 1404669622}
   light: {fileID: 222201762}
   cofre: {fileID: 0}
-  pocion: {fileID: 8300000, guid: 61313af12dfebba4cac660f3face51e8, type: 3}
+  pocion: {fileID: 8300000, guid: 5b08d23303710cb45b629691a17ab3fd, type: 3}
 --- !u!61 &833587529
 BoxCollider2D:
   m_ObjectHideFlags: 0

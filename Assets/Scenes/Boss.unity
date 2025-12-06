@@ -145,15 +145,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3056818551512613493, guid: ce4c08e4475aca64a8e2b2cb09165e49, type: 3}
       propertyPath: doorPoint
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3056818551512613493, guid: ce4c08e4475aca64a8e2b2cb09165e49, type: 3}
       propertyPath: sceneToGo
-      value: 5
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4723497889003036017, guid: ce4c08e4475aca64a8e2b2cb09165e49, type: 3}
       propertyPath: m_Name
-      value: PuertaEntrada (1)
+      value: PuertaSalida
       objectReference: {fileID: 0}
     - target: {fileID: 9133364039548253696, guid: ce4c08e4475aca64a8e2b2cb09165e49, type: 3}
       propertyPath: m_LocalPosition.x
@@ -447,7 +447,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1045054174}
         m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
         m_MethodName: MainMenuButton
         m_Mode: 1
@@ -585,7 +585,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1045054174}
         m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
         m_MethodName: Pause
         m_Mode: 1
@@ -11108,7 +11108,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1045054174}
         m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
         m_MethodName: RestartButton
         m_Mode: 1

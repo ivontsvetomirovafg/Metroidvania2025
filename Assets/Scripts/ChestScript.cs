@@ -35,14 +35,13 @@ public class ChestScript : MonoBehaviour
             case "Vida":
                 if (GameManager.instance.GetGameData.Playerlife >= GameManager.instance.GetGameData.PlayerMaxLife)
                 {
-                    burbujas.Play();
                     GetComponent<Collider2D>().enabled = false;
                     light.SetActive(false);
                     animator.SetTrigger("CofreAbrir");
                 }
                 break;
-            case "Dash":
-
+            case "Llave":
+                animator.SetBool("Llave", true);
                 break;
             case "ExtraDamage":
                 if (GameManager.instance.GetGameData.PlayerDamage > 25)
@@ -54,6 +53,11 @@ public class ChestScript : MonoBehaviour
 
                 break;
         }
+        
+        if (burbujas != null)
+        {
+             burbujas.Play();
+        }
     }
 
     // Update is called once per frame
@@ -64,6 +68,7 @@ public class ChestScript : MonoBehaviour
             if(Input.GetButtonDown("Action"))
             {
                 AudioManager.Instance.PlaySFX(cofre);
+                AudioManager.Instance.FadeOutMusic(1.5f);
                 animator.SetTrigger("CofreAbrir");
                 iconUI.SetActive(false);
                 Time.timeScale = 0;
@@ -93,19 +98,26 @@ public class ChestScript : MonoBehaviour
         {
             case "DobleSalto":
                 GameManager.instance.GetGameData.MaxJumps = 2;
+                AudioManager.Instance.SetMusicVolume(0.6f);
                 break;
             case "Vida":
-                AudioManager.Instance.PlaySFX(pocion);
                 GameManager.instance.GetGameData.Playerlife = GameManager.instance.GetGameData.PlayerMaxLife;
                 light.SetActive(false);
                 particulas.Stop();
-
+                AudioManager.Instance.PlaySFX(cofre);
                 break;
-            case "Dash":
-
+            case "Llave":
+                CharacterControler player = GameObject.Find("Player").GetComponent<CharacterControler>();
+                if (player != null)
+                {
+                    animator.SetBool("Llave", false);
+                    player.key = true;
+                    AudioManager.Instance.SetMusicVolume(0.6f);
+                }
                 break;
             case "ExtraDamage":
                 GameManager.instance.GetGameData.PlayerDamage = 35;
+                AudioManager.Instance.SetMusicVolume(0.6f);
                 break;
 
             default:

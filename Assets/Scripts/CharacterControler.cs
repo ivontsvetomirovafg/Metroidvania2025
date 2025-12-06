@@ -43,6 +43,8 @@ public class CharacterControler : MonoBehaviour
     private AudioClip ataqueFuerte;
     [SerializeField]
     private AudioClip muerte;
+
+    public bool key = false;
     
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
