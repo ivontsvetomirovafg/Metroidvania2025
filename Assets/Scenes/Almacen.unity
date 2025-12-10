@@ -12069,7 +12069,7 @@ MonoBehaviour:
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 1
   m_Color: {r: 0.81886786, g: 0.6776837, b: 0, a: 1}
-  m_Intensity: 1
+  m_Intensity: 3.39
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
   m_ApplyToSortingLayers: 00000000
@@ -12092,8 +12092,8 @@ MonoBehaviour:
     m_Extent: {x: 0.9985302, y: 0.99853027, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
-  m_PointLightInnerRadius: 3.6
-  m_PointLightOuterRadius: 18.1
+  m_PointLightInnerRadius: 2.09
+  m_PointLightOuterRadius: 11.41
   m_ShapeLightParametricSides: 5
   m_ShapeLightParametricAngleOffset: 0
   m_ShapeLightParametricRadius: 1
@@ -12604,6 +12604,8 @@ MonoBehaviour:
     sceneSave: 0
     maxJumps: 1
     boss1: 0
+    key: 0
+    dash: 0
   slot: 1
   doorToGo: 0
   comeFromLoadGame: 0
@@ -12828,6 +12830,10 @@ MonoBehaviour:
   manaBar: {fileID: 659511791}
   doorsPoints:
   - {fileID: 2057913167}
+  MinX: 0
+  MaxX: 23
+  MinY: 0
+  MaxY: 5
 --- !u!4 &2109314607
 Transform:
   m_ObjectHideFlags: 0
@@ -12849,15 +12855,15 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1289675662}
-  - {fileID: 2057913167}
+  - {fileID: 2081125840}
   - {fileID: 294962088}
   - {fileID: 927313663}
+  - {fileID: 2057913167}
   - {fileID: 2109314607}
-  - {fileID: 1501860103}
-  - {fileID: 2015886233}
   - {fileID: 2028579095}
   - {fileID: 1581921845}
   - {fileID: 317044815}
+  - {fileID: 2015886233}
   - {fileID: 1005799385}
+  - {fileID: 1501860103}
   - {fileID: 833587527}
-  - {fileID: 2081125840}

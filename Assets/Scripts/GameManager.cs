@@ -8,6 +8,13 @@ public class GameManager : MonoBehaviour
     public int slot;
     public int doorToGo;
     public bool comeFromLoadGame;
+    
+   [Header("Cam")]
+    [SerializeField]
+    public float MinX;
+    public float MaxX ;
+    public float MinY ;
+    public float MaxY; 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()

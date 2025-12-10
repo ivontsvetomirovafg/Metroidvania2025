@@ -354,7 +354,7 @@ MonoBehaviour:
   groundDistance: 0.1
   fireBallPrefab: {fileID: 6233405581449067364, guid: becb8e6a912c14e4c8d6f6510d2eb789, type: 3}
   spawnPoint: {fileID: 8294331141828346722}
-  fireBallCost: 5
+  fireBallCost: 2
   coldDown: 1
   knockBack: 0
   knockbackTime: 0.75
@@ -364,3 +364,4 @@ MonoBehaviour:
   ataqueBasico: {fileID: 8300000, guid: 87cc4b055d74888429af0c94f1380cf2, type: 3}
   ataqueFuerte: {fileID: 8300000, guid: f1a3d900317a4d54ab048922730c7e70, type: 3}
   muerte: {fileID: 8300000, guid: 6e036a01fdf07a24d99af7e695f47a62, type: 3}
+  key: 0

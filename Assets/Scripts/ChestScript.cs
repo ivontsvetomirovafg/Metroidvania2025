@@ -19,6 +19,7 @@ public class ChestScript : MonoBehaviour
     private AudioClip cofre;
     [SerializeField]
     private AudioClip pocion;
+    private Levelmanager levelManager;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -45,6 +46,12 @@ public class ChestScript : MonoBehaviour
                 break;
             case "ExtraDamage":
                 if (GameManager.instance.GetGameData.PlayerDamage > 25)
+                {
+                    GetComponent<Collider2D>().enabled = false;
+                }
+                break;
+            case "Dash":
+                if(GameManager.instance.GetGameData.Dash == true)
                 {
                     GetComponent<Collider2D>().enabled = false;
                 }
@@ -105,6 +112,8 @@ public class ChestScript : MonoBehaviour
                 light.SetActive(false);
                 particulas.Stop();
                 AudioManager.Instance.PlaySFX(cofre);
+                levelManager.UpdateLife();
+                levelManager.UpdateMana();
                 break;
             case "Llave":
                 CharacterControler player = GameObject.Find("Player").GetComponent<CharacterControler>();
@@ -112,6 +121,7 @@ public class ChestScript : MonoBehaviour
                 {
                     animator.SetBool("Llave", false);
                     player.key = true;
+                    GameManager.instance.GetGameData.Key = player.key;
                     AudioManager.Instance.SetMusicVolume(0.6f);
                 }
                 break;
@@ -119,12 +129,14 @@ public class ChestScript : MonoBehaviour
                 GameManager.instance.GetGameData.PlayerDamage = 35;
                 AudioManager.Instance.SetMusicVolume(0.6f);
                 break;
-
+            
+            case "Dash":
+                GameManager.instance.GetGameData.Dash = true;
+                break;
             default:
 
                 break;
         }
-
         Time.timeScale = 1;
         GetComponent<Collider2D>().enabled = false;
     }

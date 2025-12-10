@@ -10,14 +10,6 @@ public class Levelmanager : MonoBehaviour
     [SerializeField]
     private Transform[] doorsPoints;
 
-    [Header("Cam")]
-    [SerializeField]
-    public float MinX = 0;
-    public float MaxX = 23;
-    public float MinY = 0;
-    public float MaxY = 5;
-
-
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public void Start()
     {
@@ -32,6 +24,8 @@ public class Levelmanager : MonoBehaviour
             GameObject.FindGameObjectWithTag("Player").transform.position = doorsPoints[GameManager.instance.doorToGo].position;
             GameObject.FindGameObjectWithTag("Player").transform.rotation = doorsPoints[GameManager.instance.doorToGo].rotation;
         }
+        UpdateLife();
+        UpdateMana();
     }
 
     public void UpdateLife()

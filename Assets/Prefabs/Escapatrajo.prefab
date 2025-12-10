@@ -130,8 +130,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9505836ff43cc2a469a832b641c32b5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EscarabajoController
-  life: 50
-  damage: 15
+  life: 65
+  damage: 35
   speed: 1
   rb: {fileID: 0}
   animator: {fileID: 2995242580991372987}

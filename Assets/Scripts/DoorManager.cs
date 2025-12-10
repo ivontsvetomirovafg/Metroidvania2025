@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DoorManager : MonoBehaviour
 {
@@ -6,21 +7,21 @@ public class DoorManager : MonoBehaviour
     private CharacterControler player;
     [SerializeField]
     private GameObject iconUI;
-    [SerializeField]   
-    private bool inTrigger;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        GetComponent<Collider2D>().isTrigger = false;
         animator = GetComponent<Animator>();
         player = GameObject.Find("Player").GetComponent<CharacterControler>();
+        animator.SetBool("Close", true);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.gameObject.tag == "Player")
         {
-            inTrigger = true;
+            Debug.Log("Player causa");
             iconUI.SetActive(true);
         }
     }
@@ -28,7 +29,7 @@ public class DoorManager : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            inTrigger = false;
+            Debug.Log("Plausa");
             iconUI.SetActive(false);
         }
     }
@@ -37,9 +38,10 @@ public class DoorManager : MonoBehaviour
     {
         if(collision.gameObject.tag == "Player")
         {
+            Debug.Log("Lol");
             if(Input.GetButtonDown("Action"))
             {
-               if(player.key == true)
+               if(GameManager.instance.GetGameData.Key == player.key)
                 {
                     animator.SetBool("Close", false);
                     GetComponent<Collider2D>().isTrigger = true;

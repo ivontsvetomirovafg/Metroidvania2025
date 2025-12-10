@@ -16,6 +16,12 @@ public class CharacterControler : MonoBehaviour
     [SerializeField]
     private float groundDistance;
     private MenuController menu;
+    [SerializeField]
+    private float dashCooldown;
+    [SerializeField]
+    private float timeToDash;
+    [SerializeField]
+    private float dashSpeed;
 
     [SerializeField]
     private GameObject fireBallPrefab;
@@ -45,6 +51,10 @@ public class CharacterControler : MonoBehaviour
     private AudioClip muerte;
 
     public bool key = false;
+    [SerializeField]
+    private float dashCol;
+    [SerializeField]
+    private float offsetCol;
     
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -54,6 +64,7 @@ public class CharacterControler : MonoBehaviour
         animator = GetComponentInChildren<Animator>();
         levelManager = GameObject.Find("LevelManager").GetComponent<Levelmanager>();
         menu = GameObject.Find("MenuController").GetComponent<MenuController>();
+        key = GameManager.instance.GetGameData.Key;
     }
 
     // Update is called once per frame
@@ -134,8 +145,51 @@ public class CharacterControler : MonoBehaviour
                 comboCount = 1; 
             }
         }
-
         timePassFireBall += Time.deltaTime;
+        
+        //Dash 
+
+         if (GameManager.instance.GetGameData.Dash == true)
+            {
+                if (Input.GetButtonDown("Dash"))
+                {
+                    StartCoroutine(DashEnum());
+                }
+            }
+            timeToDash += Time.deltaTime;
+         }
+
+   public IEnumerator DashEnum()
+   {
+    CapsuleCollider2D colliderChange = GetComponent<CapsuleCollider2D>();
+
+    float colliderNormal = colliderChange.size.y;
+    float collider = colliderChange.offset.y;
+
+    if (jumpCount == 0 && dashCooldown <= timeToDash)
+    {
+        animator.SetTrigger("Dash");
+
+
+        colliderChange.offset = new Vector2(colliderChange.offset.x, offsetCol);
+        colliderChange.size = new Vector2(colliderChange.size.x, dashCol);
+
+        rb.AddForce(Vector3.right * dashSpeed);
+        knockBack = true;
+        timeToDash = 0;
+    }
+    else
+    {
+        rb.AddForce(Vector3.left * dashSpeed);
+        knockBack = true;
+    }
+
+
+    yield return new WaitForSeconds(0.5f);
+
+    knockBack = false;
+    colliderChange.size = new Vector2(colliderChange.size.x, colliderNormal);
+    colliderChange.offset = new Vector2(colliderChange.offset.x, offsetCol);
     }
 
     public void CheckCombo1()

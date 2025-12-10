@@ -42,8 +42,10 @@ public class mainMenuManager : MonoBehaviour
             GameManager.instance.GetGameData.FireballDamage = 15;
             GameManager.instance.GetGameData.HeavyDamage = 50;
             GameManager.instance.GetGameData.MaxJumps = 1;
+            GameManager.instance.GetGameData.Dash = false;
 
             SceneManager.LoadScene(1);
+        
         }
         else
         {
@@ -70,6 +72,7 @@ public class mainMenuManager : MonoBehaviour
                 GameManager.instance.GetGameData.FireballDamage = 15;
                 GameManager.instance.GetGameData.HeavyDamage = 50;
                 GameManager.instance.GetGameData.MaxJumps = 1;
+                GameManager.instance.GetGameData.Dash = false;
 
                 SceneManager.LoadScene(1);
             }

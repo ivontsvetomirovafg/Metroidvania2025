@@ -220,14 +220,14 @@ MonoBehaviour:
   rb: {fileID: 0}
   animator: {fileID: 5874576142366537164}
   player: {fileID: 0}
-  stopDistance: 3.5
+  stopDistance: 3.1
   attacking: 0
   estoyMuerto: 0
   dead: {fileID: 8300000, guid: f17c858ab4b805c4bae220a76e73db54, type: 3}
   hit: {fileID: 0}
   downDistance: 1.96
   speedDown: 1.3
-  luz: {fileID: 0}
+  luz: {fileID: 905172471045769789}
 --- !u!50 &4952134582270827236
 Rigidbody2D:
   serializedVersion: 5

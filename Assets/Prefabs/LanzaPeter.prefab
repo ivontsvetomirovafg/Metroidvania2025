@@ -106,7 +106,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LanzaPeter
   speed: 7.5
-  damage: 20
+  damage: 25
 --- !u!50 &1358309956474456531
 Rigidbody2D:
   serializedVersion: 5

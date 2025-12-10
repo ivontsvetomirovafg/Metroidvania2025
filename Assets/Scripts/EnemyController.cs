@@ -15,6 +15,7 @@ public class EnemyController : MonoBehaviour
     public float stopDistance;
     public bool attacking;
     public bool estoyMuerto;
+    private Levelmanager levelManager;
     
     [SerializeField]
     private AudioClip dead;
@@ -26,6 +27,7 @@ public class EnemyController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();   
+        levelManager = GameObject.Find("LevelManager").GetComponent<Levelmanager>();
     }
 
     // Update is called once per frame
@@ -99,6 +101,15 @@ public class EnemyController : MonoBehaviour
             rb.gravityScale = 0;
             GetComponent<Collider2D>().enabled = false;
             estoyMuerto = true;
+            if (GameManager.instance.GetGameData.PlayerMana + 2 <= GameManager.instance.GetGameData.PlayerMaxMana)
+            {
+                GameManager.instance.GetGameData.PlayerMana += 2;
+                levelManager.UpdateMana();
+            }
+            else
+            {
+                GameManager.instance.GetGameData.PlayerMana = GameManager.instance.GetGameData.PlayerMaxMana;
+            }
         }
         else
         {

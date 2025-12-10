@@ -197,8 +197,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3bbdb903286eaf428c382c2d49ba806, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GusanoController
-  life: 15
-  damage: 3.24
+  life: 50
+  damage: 20
   speed: 3.28
   rb: {fileID: 0}
   animator: {fileID: 5165199969260568283}
