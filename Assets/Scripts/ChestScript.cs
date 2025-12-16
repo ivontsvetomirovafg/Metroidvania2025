@@ -25,6 +25,7 @@ public class ChestScript : MonoBehaviour
     void Start()
     {
         animator = GetComponent<Animator>();
+        levelManager = GameObject.Find("LevelManager").GetComponent<Levelmanager>();
         switch (gemaName)
         {
             case "DobleSalto":
@@ -75,6 +76,7 @@ public class ChestScript : MonoBehaviour
             if(Input.GetButtonDown("Action"))
             {
                 AudioManager.Instance.PlaySFX(cofre);
+                AudioManager.Instance.PlaySFX(pocion);
                 AudioManager.Instance.FadeOutMusic(1.5f);
                 animator.SetTrigger("CofreAbrir");
                 iconUI.SetActive(false);
@@ -111,7 +113,6 @@ public class ChestScript : MonoBehaviour
                 GameManager.instance.GetGameData.Playerlife = GameManager.instance.GetGameData.PlayerMaxLife;
                 light.SetActive(false);
                 particulas.Stop();
-                AudioManager.Instance.PlaySFX(cofre);
                 levelManager.UpdateLife();
                 levelManager.UpdateMana();
                 break;
@@ -126,12 +127,14 @@ public class ChestScript : MonoBehaviour
                 }
                 break;
             case "ExtraDamage":
-                GameManager.instance.GetGameData.PlayerDamage = 35;
+                GameManager.instance.GetGameData.PlayerDamage = 45;
                 AudioManager.Instance.SetMusicVolume(0.6f);
                 break;
             
             case "Dash":
                 GameManager.instance.GetGameData.Dash = true;
+                AudioManager.Instance.SetMusicVolume(0.6f);
+
                 break;
             default:
 

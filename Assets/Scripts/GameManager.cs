@@ -10,7 +10,7 @@ public class GameManager : MonoBehaviour
     public bool comeFromLoadGame;
     
    [Header("Cam")]
-    [SerializeField]
+   [SerializeField]
     public float MinX;
     public float MaxX ;
     public float MinY ;

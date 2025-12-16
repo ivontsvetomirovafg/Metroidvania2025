@@ -219,11 +219,11 @@ MonoBehaviour:
   speed: 2
   rb: {fileID: 0}
   animator: {fileID: 5874576142366537164}
-  player: {fileID: 0}
+  player: {fileID: 1369375750490669284, guid: 1ca2f2a6444254748a81f79d2e6f12d9, type: 3}
   stopDistance: 3.1
   attacking: 0
   estoyMuerto: 0
-  dead: {fileID: 8300000, guid: f17c858ab4b805c4bae220a76e73db54, type: 3}
+  dead: {fileID: 8300000, guid: 11caa000955b54343a0695f4b17e54fe, type: 3}
   hit: {fileID: 0}
   downDistance: 1.96
   speedDown: 1.3

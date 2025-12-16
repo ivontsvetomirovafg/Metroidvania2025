@@ -10,10 +10,10 @@ public class Puerta : MonoBehaviour
 
     [Header("Cam")]
     [SerializeField]
-    public float MinX = 0;
-    public float MaxX = 23;
-    public float MinY = 0;
-    public float MaxY = 5;
+    public float MinX;
+    public float MaxX;
+    public float MinY;
+    public float MaxY;
 
     void Start()
     {
@@ -24,7 +24,6 @@ public class Puerta : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            if (sceneToGo == 3)
             {
              GameManager.instance.MinX = MinX;
              GameManager.instance.MaxX = MaxX;

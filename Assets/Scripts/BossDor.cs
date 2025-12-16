@@ -36,7 +36,6 @@ public class BossDor : MonoBehaviour
     {
         if (puertaDos == false)
         {
-
             if(collision.gameObject.tag == "Player")
             {
              if (transform.position.x < collision.transform.position.x)

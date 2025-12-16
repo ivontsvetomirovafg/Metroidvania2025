@@ -352,6 +352,9 @@ MonoBehaviour:
   speed: 5
   jumpForce: 7.5
   groundDistance: 0.1
+  dashCooldown: 0.1
+  timeToDash: 1
+  dashSpeed: 1
   fireBallPrefab: {fileID: 6233405581449067364, guid: becb8e6a912c14e4c8d6f6510d2eb789, type: 3}
   spawnPoint: {fileID: 8294331141828346722}
   fireBallCost: 2
@@ -361,7 +364,9 @@ MonoBehaviour:
   jump: {fileID: 8300000, guid: ff9b1b515672f6a4fa6a745625bd937f, type: 3}
   fire: {fileID: 8300000, guid: 09ceb417698cca24698e5b3821c4ef4c, type: 3}
   selfHit: {fileID: 8300000, guid: b1eb56ea835c5c744b7fb1de2960f1c7, type: 3}
-  ataqueBasico: {fileID: 8300000, guid: 87cc4b055d74888429af0c94f1380cf2, type: 3}
+  ataqueBasico: {fileID: 8300000, guid: 04735bf23a1ab4a439af7ccb4c199550, type: 3}
   ataqueFuerte: {fileID: 8300000, guid: f1a3d900317a4d54ab048922730c7e70, type: 3}
   muerte: {fileID: 8300000, guid: 6e036a01fdf07a24d99af7e695f47a62, type: 3}
   key: 0
+  dashCol: 1.35
+  offsetCol: 0.82

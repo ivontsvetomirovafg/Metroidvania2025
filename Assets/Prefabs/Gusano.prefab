@@ -82,9 +82,9 @@ GameObject:
   - component: {fileID: 9096741627145593142}
   - component: {fileID: 526827929397184929}
   - component: {fileID: 7762806908031436688}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Gusano
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -198,12 +198,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GusanoController
   life: 50
-  damage: 20
+  damage: 15
   speed: 3.28
   rb: {fileID: 0}
   animator: {fileID: 5165199969260568283}
-  player: {fileID: 0}
-  stopDistance: 0.24
+  player: {fileID: 1369375750490669284, guid: 1ca2f2a6444254748a81f79d2e6f12d9, type: 3}
+  stopDistance: 2
   attacking: 0
   estoyMuerto: 0
   dead: {fileID: 8300000, guid: f7e61962bf06ead4196c79de5d9c92fe, type: 3}

@@ -11,45 +11,42 @@ public class DoorManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        GetComponent<Collider2D>().isTrigger = false;
         animator = GetComponent<Animator>();
         player = GameObject.Find("Player").GetComponent<CharacterControler>();
         animator.SetBool("Close", true);
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    public void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.gameObject.tag == "Player")
         {
-            Debug.Log("Player causa");
             iconUI.SetActive(true);
         }
     }
-    private void OnTriggerExit2D(Collider2D collision)
+    public void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Player")
         {
-            Debug.Log("Plausa");
             iconUI.SetActive(false);
         }
     }
 
-    private void OnTriggerStay2D(Collider2D collision)
+    public void OnTriggerStay2D(Collider2D collision)
     {
         if(collision.gameObject.tag == "Player")
         {
-            Debug.Log("Lol");
             if(Input.GetButtonDown("Action"))
             {
-               if(GameManager.instance.GetGameData.Key == player.key)
+               if(player.key == true)
                 {
                     animator.SetBool("Close", false);
                     GetComponent<Collider2D>().isTrigger = true;
                     enabled = false; 
+                    iconUI.SetActive(false);
                 }
                else
                 {
-                  Debug.Log("No puedes");
+                  Debug.Log("You need a key");
                 }
             }
         }              

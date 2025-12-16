@@ -135,7 +135,7 @@ MonoBehaviour:
   speed: 1
   rb: {fileID: 0}
   animator: {fileID: 2995242580991372987}
-  player: {fileID: 0}
+  player: {fileID: 1369375750490669284, guid: 1ca2f2a6444254748a81f79d2e6f12d9, type: 3}
   stopDistance: 2
   attacking: 0
   estoyMuerto: 0
